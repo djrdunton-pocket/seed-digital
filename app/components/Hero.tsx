@@ -11,7 +11,7 @@ export default function Hero() {
           </span>
         </div>
         <h1 className="font-fraunces text-5xl md:text-7xl font-light text-[#1a3a2a] leading-tight max-w-4xl mb-8">
-          Fixed-price websites for Bath, Bristol and Somerset
+          Sleek websites. Fixed price. Built to be found.
         </h1>
         <p className="text-lg md:text-xl text-[#1a3a2a]/70 max-w-2xl mb-12 leading-relaxed">
           Seed Digital builds sleek and sensibly priced websites for startups and small businesses across Bath, Bristol and Somerset, with fixed price, fast delivery and no surprises.
