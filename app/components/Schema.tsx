@@ -3,7 +3,7 @@ export default function Schema() {
       '@context': 'https://schema.org',
       '@type': 'ProfessionalService',
       name: 'Seed Digital',
-      description: 'Fixed-price web design for startups and small businesses in Bath, UK.',
+      description: 'Fixed-price web design for startups and small businesses across Bath, Bristol and Somerset.',
       url: 'https://seed-digital.ai',
       email: 'hello@seed-digital.ai',
       address: {
@@ -19,13 +19,15 @@ export default function Schema() {
       },
       areaServed: [
         { '@type': 'City', name: 'Bath' },
+        { '@type': 'City', name: 'Bristol' },
+        { '@type': 'AdministrativeArea', name: 'Somerset' },
         { '@type': 'Country', name: 'United Kingdom' },
       ],
       priceRange: '££',
       currenciesAccepted: 'GBP',
       paymentAccepted: 'Credit Card, Bank Transfer',
       founder: { '@type': 'Person', name: 'Daniel' },
-      knowsAbout: ['Web Design', 'Next.js', 'Vercel', 'Supabase', 'SEO', 'Small Business Websites'],
+      knowsAbout: ['Web Design', 'LLM-ready websites', 'Next.js', 'Vercel', 'Supabase', 'SEO', 'Small Business Websites'],
     };
   
     const faqSchema = {
@@ -74,10 +76,10 @@ export default function Schema() {
         },
         {
           '@type': 'Question',
-          name: 'Do you only work with Bath businesses?',
+          name: 'Where do you work?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Bath is our home but we work with businesses across the UK. If you are local we are always happy to meet for a coffee.',
+            text: 'We are based in Bath and work with businesses across Bath, Bristol and Somerset. We are always happy to meet in person locally, and also work with businesses across the UK.',
           },
         },
       ],

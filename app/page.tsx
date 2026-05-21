@@ -1,5 +1,6 @@
 import Nav from './components/Nav';
 import Hero from './components/Hero';
+import LLMSection from './components/LLMSection';
 import Packages from './components/Packages';
 import HowItWorks from './components/HowItWorks';
 import Portfolio from './components/Portfolio';
@@ -14,6 +15,7 @@ export default function Home() {
       <Schema />
       <Nav />
       <Hero />
+      <LLMSection />
       <Packages />
       <HowItWorks />
       <Portfolio />

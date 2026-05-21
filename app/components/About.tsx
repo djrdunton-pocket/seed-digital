@@ -9,7 +9,7 @@ export default function About() {
                 <span className="text-xs tracking-[0.2em] uppercase text-[#f5f0e8]/40">About</span>
               </div>
               <h2 className="font-fraunces text-4xl md:text-5xl font-light text-[#f5f0e8] mb-8">Built in Bath, by someone who knows it.</h2>
-              <p className="text-[#f5f0e8]/70 leading-relaxed mb-6">I've been building websites since 2008, working with big agencies before starting Seed Digital to give Bath's startups and small businesses access to sleek, professional websites at a price that makes sense.</p>
+              <p className="text-[#f5f0e8]/70 leading-relaxed mb-6">I've been building websites since 2008, working with big agencies before starting Seed Digital to give startups and small businesses access to sleek, professional websites at a price that makes sense.</p>
               <p className="text-[#f5f0e8]/70 leading-relaxed">No big agency overhead, no inflated bills. Just honest work, delivered properly.</p>
             </div>
             <div className="border border-[#f5f0e8]/10 p-8">
@@ -17,15 +17,15 @@ export default function About() {
               <div className="flex flex-col gap-4">
                 <div className="flex items-start gap-3">
                   <div className="w-1 h-1 rounded-full bg-[#c8a96e] mt-2 flex-shrink-0" />
-                  <p className="text-sm text-[#f5f0e8]/60">Fixed prices mean no surprises. You know exactly what you're paying before we start.</p>
+                  <p className="text-sm text-[#f5f0e8]/60">Fixed prices mean no surprises. You know exactly what you're paying for, before we start.</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-1 h-1 rounded-full bg-[#c8a96e] mt-2 flex-shrink-0" />
-                  <p className="text-sm text-[#f5f0e8]/60">Fast delivery. Most projects done in 7 to 14 days from deposit to launch.</p>
+                  <p className="text-sm text-[#f5f0e8]/60">Fast delivery. Most projects live within 14 days from deposit to launch.</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-1 h-1 rounded-full bg-[#c8a96e] mt-2 flex-shrink-0" />
-                  <p className="text-sm text-[#f5f0e8]/60">Local to Bath. We understand the market and are always happy to meet in person.</p>
+                  <p className="text-sm text-[#f5f0e8]/60">Local to Bath. I understand the market and am always happy to meet in person.</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-1 h-1 rounded-full bg-[#c8a96e] mt-2 flex-shrink-0" />
