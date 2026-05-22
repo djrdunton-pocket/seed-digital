@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     description: 'Fixed-price websites for startups and small businesses across Bath, Bristol and Somerset. Fast delivery, no surprises.',
     creator: '@seeddigital',
   },
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
