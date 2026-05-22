@@ -16,6 +16,7 @@ const packages = [
     ],
     note: 'Delivered in 7 days · £90/yr hosting after year 1',
     highlighted: false,
+    stripeLink: 'https://buy.stripe.com/test_00w8wR2Ti8LN8zYctXd7q03',
   },
   {
     name: 'Grow',
@@ -34,6 +35,7 @@ const packages = [
     ],
     note: 'Delivered in 10 days · £90/yr hosting after year 1',
     highlighted: true,
+    stripeLink: 'https://buy.stripe.com/test_fZu28t79y6DF17wbpTd7q01',
   },
   {
     name: 'Flourish',
@@ -53,6 +55,7 @@ const packages = [
     ],
     note: 'Delivered in 14 days · £90/yr hosting after year 1',
     highlighted: false,
+    stripeLink: 'https://buy.stripe.com/test_28E9AV8dC0fheYmdy1d7q02',
   },
 ];
 
@@ -86,9 +89,9 @@ export default function Packages() {
                 ))}
               </ul>
               <div className={`text-xs mb-6 ${pkg.highlighted ? 'text-[#1a3a2a]/40' : 'text-[#f5f0e8]/30'}`}>{pkg.note}</div>
-              <Link href="#contact" className={`text-center text-sm px-6 py-3 transition-colors ${pkg.highlighted ? 'bg-[#1a3a2a] text-[#f5f0e8] hover:bg-[#1a3a2a]/90' : 'border border-[#f5f0e8]/20 text-[#f5f0e8] hover:border-[#f5f0e8]/40'}`}>
+              <a href={pkg.stripeLink} target="_blank" rel="noopener noreferrer" className={`text-center text-sm px-6 py-3 transition-colors ${pkg.highlighted ? 'bg-[#1a3a2a] text-[#f5f0e8] hover:bg-[#1a3a2a]/90' : 'border border-[#f5f0e8]/20 text-[#f5f0e8] hover:border-[#f5f0e8]/40'}`}>
                 Get started
-              </Link>
+              </a>
             </div>
           ))}
         </div>
