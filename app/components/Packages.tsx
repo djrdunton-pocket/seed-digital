@@ -104,7 +104,7 @@ export default function Packages() {
           </Link>
         </div>
 
-        <p className="mt-6 text-sm text-[#f5f0e8]/30 text-center">All packages include free hosting in year 1. Maintenance quoted separately per spec. Changes outside agreed scope quoted at £75/hr.</p>
+        <p className="mt-6 text-sm text-[#f5f0e8]/30 text-center">All packages include free hosting in year 1. Maintenance quoted separately per spec.</p>
       </div>
     </section>
   );
