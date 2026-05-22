@@ -40,7 +40,7 @@ const packages = [
   {
     name: 'Flourish',
     price: '£2,499',
-    tagline: 'The complete package for serious growth.',
+    tagline: 'Your complete online presence, done.',
     features: [
       '12 pages + blog',
       'LLM-ready',
@@ -49,7 +49,12 @@ const packages = [
       'Schema markup',
       'Google Search Console setup',
       'Contact form',
-      '3 rounds of revisions',
+      'Copywriting included',
+      'Custom domain setup and email configuration',
+      'Google Business Profile setup',
+      'Unlimited revisions for 30 days',
+      '30 days post-launch support',
+      'Priority turnaround',
       'Annual site performance and traffic review (if hosting)',
       'Free hosting year 1',
     ],
