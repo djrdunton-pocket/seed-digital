@@ -10,7 +10,7 @@ export default function Hero() {
             Bath · Bristol · Somerset
           </span>
         </div>
-        <h1 className="font-fraunces text-5xl md:text-7xl font-light text-[#1a3a2a] leading-tight max-w-4xl mb-8">
+        <h1 className="font-syne text-5xl md:text-7xl font-light text-[#1a3a2a] leading-tight max-w-4xl mb-8">
           Websites that grow your business.
         </h1>
         <p className="text-lg md:text-xl text-[#1a3a2a]/70 max-w-2xl mb-12 leading-relaxed">

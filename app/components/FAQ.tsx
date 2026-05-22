@@ -36,12 +36,12 @@ export default function FAQ() {
             <div className="w-1.5 h-1.5 rounded-full bg-[#c8a96e]" />
             <span className="text-xs tracking-[0.2em] uppercase text-[#1a3a2a]/50">FAQ</span>
           </div>
-          <h2 className="font-fraunces text-4xl md:text-5xl font-light text-[#1a3a2a]">Common questions</h2>
+          <h2 className="font-syne text-4xl md:text-5xl font-light text-[#1a3a2a]">Common questions</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {faqs.map((faq) => (
             <div key={faq.q} className="border-t border-[#1a3a2a]/10 pt-6">
-              <h3 className="font-fraunces text-lg text-[#1a3a2a] mb-3">{faq.q}</h3>
+              <h3 className="font-syne text-lg text-[#1a3a2a] mb-3">{faq.q}</h3>
               <p className="text-sm text-[#1a3a2a]/60 leading-relaxed">{faq.a}</p>
             </div>
           ))}

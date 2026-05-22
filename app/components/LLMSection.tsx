@@ -8,7 +8,7 @@ export default function LLMSection() {
                 <div className="w-1.5 h-1.5 rounded-full bg-[#c8a96e]" />
                 <span className="text-xs tracking-[0.2em] uppercase text-[#f5f0e8]/40">The future of search</span>
               </div>
-              <h2 className="font-fraunces text-4xl md:text-5xl font-light text-[#f5f0e8] mb-8">The web has changed. Is your business keeping up?</h2>
+              <h2 className="font-syne text-4xl md:text-5xl font-light text-[#f5f0e8] mb-8">The web has changed. Is your business keeping up?</h2>
               <a href="#packages" className="inline-block border border-[#f5f0e8]/20 text-[#f5f0e8] px-8 py-4 text-sm tracking-wide hover:border-[#f5f0e8]/50 transition-colors">See our packages</a>
             </div>
             <div className="flex flex-col gap-6">

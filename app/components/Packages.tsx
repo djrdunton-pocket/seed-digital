@@ -73,7 +73,7 @@ export default function Packages() {
             <div className="w-1.5 h-1.5 rounded-full bg-[#c8a96e]" />
             <span className="text-xs tracking-[0.2em] uppercase text-[#f5f0e8]/40">Packages</span>
           </div>
-          <h2 className="font-fraunces text-4xl md:text-5xl font-light text-[#f5f0e8]">Simple, fixed pricing</h2>
+          <h2 className="font-syne text-4xl md:text-5xl font-bold text-[#f5f0e8]">Simple, fixed pricing</h2>
           <p className="mt-4 text-[#f5f0e8]/60 max-w-xl">Pick the package that fits. 50% deposit to secure your start date, 50% on launch day. Every site is LLM-ready as standard.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -82,8 +82,8 @@ export default function Packages() {
               {pkg.highlighted && (
                 <div className="text-xs tracking-[0.2em] uppercase text-[#c8a96e] mb-4">Most popular</div>
               )}
-              <div className="font-fraunces text-2xl mb-1">{pkg.name}</div>
-              <div className="font-fraunces text-4xl font-light mb-4">{pkg.price}</div>
+              <div className="font-syne text-2xl font-bold mb-1">{pkg.name}</div>
+              <div className="font-dm-sans text-4xl font-light mb-4">{pkg.price}</div>
               <p className={`text-sm mb-8 ${pkg.highlighted ? 'text-[#1a3a2a]/60' : 'text-[#f5f0e8]/50'}`}>{pkg.tagline}</p>
               <ul className="flex flex-col gap-3 mb-10 flex-1">
                 {pkg.features.map((feature) => (

@@ -8,7 +8,7 @@ export default function About() {
                 <div className="w-1.5 h-1.5 rounded-full bg-[#c8a96e]" />
                 <span className="text-xs tracking-[0.2em] uppercase text-[#f5f0e8]/40">About</span>
               </div>
-              <h2 className="font-fraunces text-4xl md:text-5xl font-light text-[#f5f0e8] mb-8">Built in Bath, by someone who knows it.</h2>
+              <h2 className="font-syne text-4xl md:text-5xl font-light text-[#f5f0e8] mb-8">Built in Bath, by someone who knows it.</h2>
               <p className="text-[#f5f0e8]/70 leading-relaxed mb-6">I've been building websites since 2008, working with big agencies before starting Seed Digital to give startups and small businesses access to sleek, professional websites at a price that makes sense.</p>
               <p className="text-[#f5f0e8]/70 leading-relaxed">No big agency overhead, no inflated bills. Just honest work, delivered properly.</p>
             </div>

@@ -38,7 +38,7 @@ const steps = [
                 Process
               </span>
             </div>
-            <h2 className="font-fraunces text-4xl md:text-5xl font-light text-[#1a3a2a]">
+            <h2 className="font-syne text-4xl md:text-5xl font-light text-[#1a3a2a]">
               How it works
             </h2>
           </div>
@@ -53,10 +53,10 @@ const steps = [
                   <div className="hidden md:block absolute top-6 left-[calc(50%+1.5rem)] right-0 h-px bg-[#1a3a2a]/10" />
                 )}
   
-                <div className="font-fraunces text-5xl font-light text-[#c8a96e] mb-4">
+                <div className="font-syne text-5xl font-light text-[#c8a96e] mb-4">
                   {step.number}
                 </div>
-                <h3 className="font-fraunces text-lg text-[#1a3a2a] mb-3">
+                <h3 className="font-syne text-lg text-[#1a3a2a] mb-3">
                   {step.title}
                 </h3>
                 <p className="text-sm text-[#1a3a2a]/60 leading-relaxed">
