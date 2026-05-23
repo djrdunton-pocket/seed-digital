@@ -45,7 +45,7 @@ export default function Footer() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
             <div>
-              <div className="font-syne text-2xl font-bold text-[#f5f0e8] mb-3">Seed <span className="text-[#c8a96e]">Digital</span></div>
+              <div className="font-syne text-xl font-light text-[#f5f0e8] mb-3">Seed <span className="text-[#c8a96e]">Digital</span></div>
               <p className="text-sm text-[#f5f0e8]/50 leading-relaxed">Fixed-price websites for Bath, Bristol and Somerset.</p>
             </div>
             <div>

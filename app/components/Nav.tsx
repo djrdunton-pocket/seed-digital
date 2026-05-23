@@ -11,7 +11,7 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         
         {/* Logo */}
-        <Link href="/" className="font-syne text-xl text-[#1a3a2a] tracking-tight">
+        <Link href="/" className="font-syne text-xl font-light text-[#1a3a2a] tracking-tight">
           Seed <span className="text-[#c8a96e]">Digital</span>
         </Link>
 
