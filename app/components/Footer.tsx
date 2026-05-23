@@ -68,6 +68,7 @@ export default function Footer() {
             <p className="text-xs text-[#f5f0e8]/30">© 2026 Seed Digital. All rights reserved.</p>
             <div className="flex gap-6">
               <a href="/terms" className="text-xs text-[#f5f0e8]/30 hover:text-[#f5f0e8] transition-colors">Terms and Conditions</a>
+              <a href="/privacy" className="text-xs text-[#f5f0e8]/30 hover:text-[#f5f0e8] transition-colors">Privacy Policy</a>
             </div>
             <p className="text-xs text-[#f5f0e8]/30">Seed Digital is a trading name of DJRD Ltd · Registered in England and Wales · Company no. 16103531</p>
           </div>
