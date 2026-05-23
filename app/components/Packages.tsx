@@ -16,7 +16,7 @@ const packages = [
     ],
     note: '7 day delivery · £90/yr hosting after year 1',
     highlighted: false,
-    stripeLink: 'https://buy.stripe.com/test_00w8wR2Ti8LN8zYctXd7q03',
+    stripeLink: 'https://buy.stripe.com/aFaeVdh114Rc3ZO16q2ZO00',
   },
   {
     name: 'Grow',
@@ -35,7 +35,7 @@ const packages = [
     ],
     note: '10 day delivery · £90/yr hosting after year 1',
     highlighted: true,
-    stripeLink: 'https://buy.stripe.com/test_fZu28t79y6DF17wbpTd7q01',
+    stripeLink: 'https://buy.stripe.com/6oU14n5ij4RcgMA16q2ZO01',
   },
   {
     name: 'Flourish',
@@ -60,7 +60,7 @@ const packages = [
     ],
     note: '14 day delivery · £90/yr hosting after year 1',
     highlighted: false,
-    stripeLink: 'https://buy.stripe.com/test_28E9AV8dC0fheYmdy1d7q02',
+    stripeLink: 'https://buy.stripe.com/00w28r5ij3N8bsg6qK2ZO02',
   },
 ];
 
