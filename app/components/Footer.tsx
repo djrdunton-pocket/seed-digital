@@ -10,7 +10,7 @@ export default function Footer() {
                 <div className="w-1.5 h-1.5 rounded-full bg-[#c8a96e]" />
                 <span className="text-xs tracking-[0.2em] uppercase text-[#1a3a2a]/50">Get in touch</span>
               </div>
-              <h2 className="font-syne text-4xl md:text-5xl font-bold text-[#1a3a2a] mb-6">Start your project</h2>
+              <h2 className="font-syne text-4xl md:text-5xl font-bold text-[#1a3a2a] mb-6">Let's build something</h2>
               <p className="text-[#1a3a2a]/60 leading-relaxed mb-6">Tell us about your business and what you need. We will get back to you within 24 hours.</p>
               <div className="flex flex-col gap-3">
                 <div className="flex items-center gap-3">
