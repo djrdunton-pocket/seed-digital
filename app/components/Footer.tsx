@@ -1,3 +1,5 @@
+import ContactForm from './ContactForm';
+
 export default function Footer() {
   return (
     <>
@@ -28,13 +30,7 @@ export default function Footer() {
               </div>
             </div>
             <div>
-              <iframe
-                src="https://tally.so/embed/zx1D28?alignLeft=1&hideTitle=1&transparentBackground=1"
-                width="100%"
-                height="500"
-                frameBorder="0"
-                title="Seed Digital Enquiry"
-              />
+              <ContactForm />
             </div>
           </div>
         </div>
