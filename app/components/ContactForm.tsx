@@ -3,6 +3,12 @@
 import { useState } from 'react';
 import { supabase } from '../../lib/supabase';
 
+declare global {
+  interface Window {
+    gtag: (...args: unknown[]) => void;
+  }
+}
+
 const packages = [
   'Seed · £899',
   'Grow · £1,499',
@@ -36,6 +42,12 @@ export default function ContactForm() {
     if (error) {
       setStatus('error');
     } else {
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', 'manual_event_SUBMIT', {
+          event_category: 'contact',
+          event_label: 'Contact Form Submission',
+        });
+      }
       setStatus('success');
       setFormData({ name: '', email: '', business_name: '', package: '', message: '' });
     }
