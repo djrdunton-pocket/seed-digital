@@ -94,9 +94,12 @@ export default function Packages() {
                 ))}
               </ul>
               <div className={`text-xs mb-6 ${pkg.highlighted ? 'text-[#1a3a2a]/40' : 'text-[#f5f0e8]/30'}`}>{pkg.note}</div>
-              <a href={pkg.stripeLink} target="_blank" rel="noopener noreferrer" className={`text-center text-sm px-6 py-3 transition-colors ${pkg.highlighted ? 'bg-[#1a3a2a] text-[#f5f0e8] hover:bg-[#1a3a2a]/90' : 'border border-[#f5f0e8]/20 text-[#f5f0e8] hover:border-[#f5f0e8]/40'}`}>
-                Get started
+              <a href={pkg.stripeLink} target="_blank" rel="noopener noreferrer" className={`text-center text-sm px-6 py-3 transition-colors mb-3 ${pkg.highlighted ? 'bg-[#1a3a2a] text-[#f5f0e8] hover:bg-[#1a3a2a]/90' : 'border border-[#f5f0e8]/20 text-[#f5f0e8] hover:border-[#f5f0e8]/40'}`}>
+                Pay 50% deposit to start
               </a>
+              <Link href="#contact" className={`text-center text-xs transition-colors ${pkg.highlighted ? 'text-[#1a3a2a]/40 hover:text-[#1a3a2a]/60' : 'text-[#f5f0e8]/30 hover:text-[#f5f0e8]/50'}`}>
+                Have a question? Ask us below
+              </Link>
             </div>
           ))}
         </div>
