@@ -81,6 +81,13 @@ export default function ContactForm() {
     if (error) {
       setStatus('error');
     } else {
+      // Send email notification
+      await fetch('/api/seed-contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
       if (typeof window !== 'undefined' && window.gtag) {
         window.gtag('event', 'manual_event_SUBMIT', {
           event_category: 'contact',
