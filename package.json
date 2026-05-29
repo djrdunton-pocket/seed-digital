@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/third-parties": "^16.2.6",
+    "@react-email/render": "^2.0.8",
     "@supabase/supabase-js": "^2.106.1",
     "@types/node": "20.6.2",
     "@types/react": "18.2.22",
