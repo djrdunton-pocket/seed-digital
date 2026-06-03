@@ -4,7 +4,6 @@ import WhyNow from './components/WhyNow';
 import Audit from './components/Audit';
 import Journey from './components/Journey';
 import SupplementaryStrip from './components/SupplementaryStrip';
-import Portfolio from './components/Portfolio';
 import Credibility from './components/Credibility';
 import FinalCTA from './components/FinalCTA';
 import SiteFooter from './components/SiteFooter';
@@ -21,7 +20,6 @@ export default function Home() {
         <Audit />
         <Journey />
         <SupplementaryStrip />
-        <Portfolio />
         <Credibility />
         <FinalCTA />
       </main>

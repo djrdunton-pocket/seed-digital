@@ -16,10 +16,10 @@ declare global {
 
 const SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!;
 
-const packages = [
-  'Seed · £899',
-  'Grow · £1,499',
-  'Flourish · £2,499',
+const enquiryOptions = [
+  'AI Audit',
+  'AI transformation / consultancy',
+  'Website packages',
   'Bespoke build',
   'Not sure yet',
 ];
@@ -167,9 +167,9 @@ export default function ContactForm() {
             onChange={handleChange}
             className="w-full border border-[#1a3a2a]/30 bg-white px-4 py-3 text-sm text-[#1a3a2a] focus:outline-none focus:border-[#1a3a2a] transition-colors"
           >
-            <option value="">Select a package</option>
-            {packages.map((pkg) => (
-              <option key={pkg} value={pkg}>{pkg}</option>
+            <option value="">Select an option</option>
+            {enquiryOptions.map((opt) => (
+              <option key={opt} value={opt}>{opt}</option>
             ))}
           </select>
         </div>
