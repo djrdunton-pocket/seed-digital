@@ -36,16 +36,17 @@ export default function ToolAgnostic() {
         </div>
 
         <h2 className="mt-8 font-syne font-bold text-4xl md:text-5xl max-w-4xl">
-          Need first, not loyalty.
+          Discovery first, then the best fit.
         </h2>
 
         <div className="mt-8 space-y-6 text-lg text-[#f5f0e8]/70 max-w-3xl">
           <p>
-            We are not tied to any single vendor, model or platform. The &quot;one
-            AI for everything&quot; era is over, and the best results now come
-            from matching the right tool to each specific job. We assess your
-            needs, your existing systems, your budget, your data and your risk
-            appetite, then recommend the most suitable solution.
+            We start with discovery, not a sales pitch. We are not tied to any
+            single vendor, model or platform, and the &quot;one AI for
+            everything&quot; era is over. Only once we understand your needs,
+            your existing systems, your budget, your data and your risk appetite
+            do we decide the best way to deliver, matching the right tool to each
+            specific job.
           </p>
           <p>
             If that is the platform you already pay for, great. If a different

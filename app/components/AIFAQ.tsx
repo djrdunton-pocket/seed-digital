@@ -27,9 +27,20 @@ const faqs = [
   },
 ];
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+};
+
 export default function AIFAQ() {
   return (
     <section id="faq" className="py-24 border-t border-[#1a3a2a]/10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <div className="max-w-6xl mx-auto px-6">
         <Eyebrow>FAQ</Eyebrow>
         <h2 className="mt-8 font-syne font-bold text-4xl md:text-5xl text-[#1a3a2a]">
