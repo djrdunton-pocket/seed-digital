@@ -5,23 +5,44 @@ import Link from 'next/link';
 
 // If/when you have the Google Ads conversion action label, set it here as
 // 'AW-18184812773/xxxxxxxxxxxxxxx' and the Ads conversion will also fire.
-// Leave empty to fire only the GA4 event (recommended until the label is ready).
+// Leave empty to fire only the GA4 event.
 const ADS_CONVERSION_SEND_TO = '';
+
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
 
 export default function ThankYou() {
   useEffect(() => {
-    if (typeof window === 'undefined' || typeof window.gtag !== 'function') return;
+    let fired = false;
+    let tries = 0;
 
-    // GA4 conversion event. Mark "discovery_call_booked" as a key event in GA4,
-    // then import it into Google Ads as a conversion.
-    window.gtag('event', 'discovery_call_booked', {
-      event_category: 'lead',
-      event_label: 'Calendly discovery call booked',
-    });
+    function fire() {
+      if (fired || typeof window === 'undefined' || typeof window.gtag !== 'function') {
+        return false;
+      }
+      fired = true;
+      // GA4 conversion event. Mark "discovery_call_booked" as a key event in GA4,
+      // then import it into Google Ads as a conversion.
+      window.gtag('event', 'discovery_call_booked', {
+        event_category: 'lead',
+        event_label: 'Calendly discovery call booked',
+      });
+      if (ADS_CONVERSION_SEND_TO) {
+        window.gtag('event', 'conversion', { send_to: ADS_CONVERSION_SEND_TO });
+      }
+      return true;
+    }
 
-    // Optional direct Google Ads conversion (only fires if a label is set above).
-    if (ADS_CONVERSION_SEND_TO) {
-      window.gtag('event', 'conversion', { send_to: ADS_CONVERSION_SEND_TO });
+    // gtag (loaded via @next/third-parties GoogleAnalytics) may not be ready on
+    // mount, so poll briefly until it is, then fire once.
+    if (!fire()) {
+      const id = setInterval(() => {
+        if (fire() || ++tries > 40) clearInterval(id);
+      }, 250);
+      return () => clearInterval(id);
     }
   }, []);
 
