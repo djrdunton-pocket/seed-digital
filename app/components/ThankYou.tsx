@@ -10,7 +10,7 @@ const ADS_CONVERSION_SEND_TO = '';
 
 declare global {
   interface Window {
-    gtag?: (...args: unknown[]) => void;
+    gtag: (...args: unknown[]) => void;
   }
 }
 
