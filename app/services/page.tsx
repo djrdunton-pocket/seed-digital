@@ -6,7 +6,7 @@ import Journey from '../components/Journey';
 import ServicesDetail from '../components/ServicesDetail';
 import ToolAgnostic from '../components/ToolAgnostic';
 import HowItWorksAI from '../components/HowItWorksAI';
-import FinalCTA from '../components/FinalCTA';
+import ContactCTA from '../components/ContactCTA';
 import SiteFooter from '../components/SiteFooter';
 import { CALENDLY_URL, externalLinkProps } from '../components/constants';
 
@@ -65,7 +65,7 @@ export default function ServicesPage() {
         <ServicesDetail />
         <ToolAgnostic />
         <HowItWorksAI />
-        <FinalCTA />
+        <ContactCTA />
       </main>
       <SiteFooter />
     </>

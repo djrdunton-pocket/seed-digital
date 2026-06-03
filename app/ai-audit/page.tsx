@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import Nav from '../components/Nav';
 import Audit from '../components/Audit';
 import HowItWorksAI from '../components/HowItWorksAI';
-import FinalCTA from '../components/FinalCTA';
+import AIFAQ from '../components/AIFAQ';
+import ContactCTA from '../components/ContactCTA';
 import SiteFooter from '../components/SiteFooter';
 
 export const metadata: Metadata = {
@@ -29,7 +30,8 @@ export default function AIAuditPage() {
       <main className="pt-16">
         <Audit />
         <HowItWorksAI />
-        <FinalCTA />
+        <AIFAQ />
+        <ContactCTA />
       </main>
       <SiteFooter />
     </>
