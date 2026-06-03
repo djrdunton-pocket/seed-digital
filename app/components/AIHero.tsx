@@ -22,9 +22,9 @@ export default function AIHero() {
           </h1>
 
           <p className="mt-8 text-lg md:text-xl text-[#1a3a2a]/70 max-w-2xl">
-            Everyone says you should be using AI. Few can tell you how. We find
-            where AI saves you time, cuts cost and unlocks growth, then give you
-            a clear plan to act on, and the hands to deliver it.
+            You know AI matters. The hard part is knowing where to start. We
+            find where it pays off for your business, then help you act on it,
+            from plan to delivery.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
