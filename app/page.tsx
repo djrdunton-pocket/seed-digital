@@ -1,27 +1,31 @@
 import Nav from './components/Nav';
-import Hero from './components/Hero';
-import LLMSection from './components/LLMSection';
-import Packages from './components/Packages';
-import HowItWorks from './components/HowItWorks';
+import AIHero from './components/AIHero';
+import WhyNow from './components/WhyNow';
+import Audit from './components/Audit';
+import Journey from './components/Journey';
+import SupplementaryStrip from './components/SupplementaryStrip';
 import Portfolio from './components/Portfolio';
-import About from './components/About';
-import FAQ from './components/FAQ';
-import Footer from './components/Footer';
+import Credibility from './components/Credibility';
+import FinalCTA from './components/FinalCTA';
+import SiteFooter from './components/SiteFooter';
 import Schema from './components/Schema';
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Schema />
       <Nav />
-      <Hero />
-      <LLMSection />
-      <Packages />
-      <HowItWorks />
-      <Portfolio />
-      <About />
-      <FAQ />
-      <Footer />
-    </main>
+      <main>
+        <AIHero />
+        <WhyNow />
+        <Audit />
+        <Journey />
+        <SupplementaryStrip />
+        <Portfolio />
+        <Credibility />
+        <FinalCTA />
+      </main>
+      <SiteFooter />
+    </>
   );
 }

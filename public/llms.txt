@@ -1,0 +1,32 @@
+# Seed Digital
+
+> Seed Digital is an AI transformation consultancy for ambitious businesses across Bath, Bristol and Somerset. We help businesses adopt AI with confidence, starting with a fixed-price AI Audit and a clear roadmap to act on. We also design and build LLM-ready websites and offer a free conversion optimisation audit. We are tool-agnostic: we choose the most suitable AI solution based on need, not vendor loyalty.
+
+Led by Daniel Dunton, who has spent 17+ years leading high-stakes digital transformation and AI programmes (£8m+ budgets) across financial services, healthcare, sport, energy and publishing. Senior, hands-on expertise, made accessible to smaller businesses.
+
+## Main offering
+
+- [AI Audit](https://seed-digital.ai/ai-audit): A focused, fixed-price audit (£1,999, delivered in 2 weeks) that finds where AI saves time, cuts cost and unlocks growth, with a prioritised roadmap and a debrief session. The recommended starting point.
+- [AI Services](https://seed-digital.ai/services): Post-audit delivery. AI workflows and automation, custom AI and integration (assistants, copilots, agents, RAG), AI strategy and roadmap, enablement and training, and full transformation and delivery.
+
+## How we choose tools
+
+- Need first, not loyalty: not tied to any single vendor, model or platform. We match the right tool to each job and will say so if AI is not the right answer.
+- Platforms we work with: OpenAI (ChatGPT), Anthropic (Claude), Google (Gemini), Microsoft Copilot and Microsoft 365 Copilot, Google Workspace with Gemini, open models (Llama, Mistral); automation via n8n, Make, Zapier, Microsoft Power Automate; agent platforms including ChatGPT Workspace Agents, Gemini Enterprise Agent Platform and Salesforce Agentforce; cloud build via Azure AI, Amazon Bedrock and Google Vertex AI; integration with business systems such as HubSpot and Salesforce.
+
+## Supplementary services
+
+- [Website design and build](https://seed-digital.ai/web): Fixed-price, LLM-ready websites for startups and small businesses. Packages: Seed (£899), Grow (£1,499), Flourish (£2,499), plus bespoke builds. 50% deposit to start, fast delivery, free hosting in year 1.
+- [Free conversion optimisation audit](https://cro.seed-digital.ai): A free, 30-second read on any website's speed, findability and usability using real Google PageSpeed data, in plain English, with what to fix first.
+
+## Contact
+
+- [Book a discovery call](https://calendly.com/djrdunton/talk-to-dan): A free 30-minute call about what AI could do for your business.
+- Email: hello@seed-digital.ai
+- Based in Bath, working across Bath, Bristol and Somerset and the wider UK.
+
+## About
+
+- Trading name of DJRD Ltd, registered in England and Wales, company no. 16103531.
+- [Privacy Policy](https://seed-digital.ai/privacy)
+- [Terms and Conditions](https://seed-digital.ai/terms)

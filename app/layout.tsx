@@ -8,17 +8,17 @@ const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans' });
 const syne = Syne({ subsets: ['latin'], variable: '--font-syne' });
 
 export const metadata: Metadata = {
-  title: 'Seed Digital · Fixed-price websites for Bath, Bristol and Somerset',
-  description: 'Seed Digital builds sleek and sensibly priced websites for startups and small businesses across Bath, Bristol and Somerset, with fixed price, fast delivery and no surprises.',
+  title: 'Seed Digital · AI transformation consultancy for Bath, Bristol & Somerset',
+  description: 'Seed Digital helps ambitious businesses adopt AI with confidence, starting with a fixed-price AI audit and a clear roadmap to act on. Tool-agnostic. Web design and conversion optimisation to deliver it.',
   metadataBase: new URL('https://seed-digital.ai'),
-  keywords: ['web design Bath', 'web design Bristol', 'web design Somerset', 'fixed price web design', 'LLM ready websites', 'small business websites', 'startup websites'],
-  authors: [{ name: 'Daniel', url: 'https://seed-digital.ai' }],
+  keywords: ['AI consultancy Bath', 'AI consultant Bristol', 'AI transformation Somerset', 'AI audit', 'business automation', 'AI strategy', 'AI workflows'],
+  authors: [{ name: 'Daniel Dunton', url: 'https://seed-digital.ai' }],
   creator: 'Seed Digital',
   robots: { index: true, follow: true },
   alternates: { canonical: 'https://seed-digital.ai' },
   openGraph: {
-    title: 'Seed Digital · Fixed-price websites for Bath, Bristol and Somerset',
-    description: 'Seed Digital builds sleek and sensibly priced websites for startups and small businesses across Bath, Bristol and Somerset, with fixed price, fast delivery and no surprises.',
+    title: 'Seed Digital · AI transformation consultancy for Bath, Bristol & Somerset',
+    description: 'Seed Digital helps ambitious businesses adopt AI with confidence, starting with a fixed-price AI audit and a clear roadmap to act on. Tool-agnostic.',
     url: 'https://seed-digital.ai',
     siteName: 'Seed Digital',
     locale: 'en_GB',
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Seed Digital · Fixed-price websites for Bath, Bristol and Somerset',
-    description: 'Fixed-price websites for startups and small businesses across Bath, Bristol and Somerset. Fast delivery, no surprises.',
+    title: 'Seed Digital · AI transformation consultancy for Bath, Bristol & Somerset',
+    description: 'AI transformation consultancy for ambitious businesses across Bath, Bristol and Somerset. Start with a fixed-price AI audit.',
     creator: '@seeddigital',
   },
   icons: {
