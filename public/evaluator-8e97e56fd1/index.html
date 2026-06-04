@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex,nofollow" />
+<title>Seed Digital — AI Adoption Evaluator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#f3efe4; --ink:#16271d; --ink-soft:#3a4b41; --line:#d6cfbb;
+    --card:#fbf9f2; --accent:#c0703a; --accent-deep:#9a5526; --seed:#2f5a3f;
+    --good:#3d7a4f; --warn:#c0703a; --high:#a23b2a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Newsreader",serif;font-size:16px;line-height:1.55}
+  .wrap{max-width:780px;margin:0 auto;padding:40px 22px 72px}
+  .brand{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+  .seed-dot{width:26px;height:26px;border-radius:50% 50% 50% 0;background:var(--seed);transform:rotate(-45deg)}
+  .brand span{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--seed);font-weight:600}
+  h1{font-family:"Fraunces",serif;font-size:40px;font-weight:600;line-height:1.05;margin:8px 0 6px;letter-spacing:-.01em}
+  .lede{color:var(--ink-soft);font-size:17px;margin:0;max-width:580px}
+  .rule{height:1px;background:var(--line);margin:30px 0}
+  label{display:block;margin-bottom:18px}
+  label .lab{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:6px;font-weight:600}
+  label .hint{display:block;font-size:12px;color:var(--ink-soft);opacity:.8;margin-top:4px}
+  input,select,textarea{width:100%;padding:11px 13px;background:var(--card);border:1px solid var(--line);border-radius:8px;font-family:"Newsreader",serif;font-size:16px;color:var(--ink);outline:none}
+  textarea{min-height:70px;resize:vertical}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}
+  .full{grid-column:1 / -1}
+  button.primary{width:100%;padding:15px 20px;border:none;border-radius:10px;background:var(--seed);color:#fbf9f2;font-family:"Fraunces",serif;font-size:18px;font-weight:600;cursor:pointer;transition:opacity .2s}
+  button.primary:disabled{background:var(--line);color:var(--ink-soft);cursor:not-allowed}
+  button.ghost{padding:8px 14px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font-family:"Newsreader",serif;font-size:14px;cursor:pointer}
+  .note{font-size:13px;color:var(--ink-soft);text-align:center;margin-top:8px}
+  .err{color:var(--accent-deep);margin:6px 0}
+  .spin{display:inline-block;width:16px;height:16px;border:2px solid #fbf9f2;border-top-color:transparent;border-radius:50%;animation:spin .8s linear infinite;vertical-align:-3px;margin-right:8px}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  /* report */
+  .topbar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+  .topbar h2{font-family:"Fraunces",serif;font-size:24px;font-weight:600;margin:0}
+  .gaugewrap{display:flex;align-items:center;gap:20px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin-bottom:22px}
+  .gaugewrap p{margin:0;color:var(--ink-soft)}
+  .gaugewrap .num{font-family:"Fraunces",serif;font-size:15px;color:var(--seed);font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+  .sect{margin:26px 0 8px}
+  .sect h3{font-family:"Fraunces",serif;font-size:20px;font-weight:600;color:var(--seed);margin:0 0 4px;border-bottom:1px solid var(--line);padding-bottom:6px}
+  .item{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:10px 0}
+  .item .t{font-weight:600;color:var(--ink);margin-bottom:3px}
+  .item .d{color:var(--ink-soft)}
+  .tags{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+  .pill{font-size:11px;letter-spacing:.05em;text-transform:uppercase;font-weight:600;padding:3px 9px;border-radius:20px;border:1px solid}
+  .roadmap{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+  .phase{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+  .phase .ph{font-family:"Fraunces",serif;font-weight:600;color:var(--accent);margin-bottom:6px}
+  .phase ul{margin:0;padding-left:18px;color:var(--ink-soft)}
+  .phase li{margin:4px 0}
+  .toollist a{color:var(--accent-deep);text-decoration:none;border-bottom:1px solid var(--line)}
+  ul.plain{padding-left:18px;color:var(--ink-soft)}
+  ul.plain li{margin:5px 0}
+  .first{background:#eef3ec;border:1px solid #cfe0d2;border-radius:10px;padding:14px 16px;color:var(--seed)}
+  .disclaim{font-size:12.5px;color:var(--ink-soft);opacity:.85;margin-top:16px}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}.roadmap{grid-template-columns:1fr}h1{font-size:32px}}
+
+  /* one-page client handoff (print only) */
+  #handoff{display:none}
+  #handoff .hd{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2px solid var(--seed);padding-bottom:10px;margin-bottom:14px}
+  #handoff .hd .bd{display:flex;align-items:center;gap:9px}
+  #handoff .hd .dot{width:18px;height:18px;border-radius:50% 50% 50% 0;background:var(--seed);transform:rotate(-45deg)}
+  #handoff .hd .bd b{font-family:"Fraunces",serif;font-size:15px;color:var(--seed);letter-spacing:.12em;text-transform:uppercase}
+  #handoff h2{font-family:"Fraunces",serif;font-size:22px;margin:2px 0 0;color:var(--ink)}
+  #handoff .meta{text-align:right;font-size:12px;color:var(--ink-soft)}
+  #handoff .score{display:flex;align-items:center;gap:14px;margin:10px 0 16px}
+  #handoff .score .big{font-family:"Fraunces",serif;font-size:38px;color:var(--seed);line-height:1}
+  #handoff .score small{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);display:block}
+  #handoff h3{font-family:"Fraunces",serif;font-size:14px;color:var(--accent);text-transform:uppercase;letter-spacing:.06em;margin:14px 0 6px}
+  #handoff .start{background:#eef3ec;border-left:3px solid var(--seed);padding:9px 12px;font-size:13.5px;color:var(--seed)}
+  #handoff .win{font-size:13px;margin:5px 0}
+  #handoff .win b{color:var(--ink)}
+  #handoff .rm{display:flex;gap:12px;font-size:12px}
+  #handoff .rm div{flex:1}
+  #handoff .rm .p{font-family:"Fraunces",serif;color:var(--accent);margin-bottom:3px}
+  #handoff .ft{margin-top:16px;padding-top:10px;border-top:1px solid var(--line);font-size:11px;color:var(--ink-soft);display:flex;justify-content:space-between}
+  @media print{
+    body *{visibility:hidden}
+    #handoff,#handoff *{visibility:visible}
+    #handoff{display:block;position:absolute;left:0;top:0;width:100%}
+    @page{size:A4;margin:15mm}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand"><div class="seed-dot"></div><span>Seed Digital</span></div>
+  <h1>AI Adoption Evaluator</h1>
+  <p class="lede">A first-pass diagnostic. Enter a business's shape, answer a couple of follow-ups, and Seed drafts a tailored, current AI plan — searching the web live so nothing's out of date.</p>
+  <div class="rule"></div>
+  <div id="app"></div>
+</div>
+<div id="handoff"></div>
+
+<script>
+const SELECTS = {
+  size: ["1–10","11–50","51–200","201–1000","1000+"],
+  turnover: ["Under £250k","£250k–£1m","£1m–£5m","£5m–£25m","£25m+"],
+  maturity: ["None yet","Experimenting","Some tools in use","Embedded across teams"],
+  goal: ["Cut costs","Grow revenue","Improve efficiency","Better customer experience","Not sure yet"],
+  data: ["Poor / scattered","Some structured data","Good","Excellent"],
+  budget: ["Low","Moderate","Significant"]
+};
+
+const state = {
+  stage: "form",
+  accessCode: "cf0829e337a3a32bbefa934fd18127d2",
+  form: {company:"",industry:"",size:"",turnover:"",maturity:"",goal:"",challenges:"",tasks:"",stack:"",data:"",budget:"",compliance:""},
+  questions: [],
+  answers: [],
+  report: null,
+  error: ""
+};
+
+const app = document.getElementById("app");
+const esc = (s)=> (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+
+function sel(key){
+  return `<select data-f="${key}"><option value="">Select…</option>` +
+    SELECTS[key].map(o=>`<option ${state.form[key]===o?"selected":""}>${o}</option>`).join("") + `</select>`;
+}
+function txt(key, ph){ return `<input data-f="${key}" value="${esc(state.form[key])}" placeholder="${ph}" />`; }
+function area(key, ph){ return `<textarea data-f="${key}" placeholder="${ph}">${esc(state.form[key])}</textarea>`; }
+
+function bindFields(){
+  app.querySelectorAll("[data-f]").forEach(el=>{
+    el.addEventListener("input", ()=>{ state.form[el.dataset.f] = el.value; });
+    el.addEventListener("change", ()=>{ state.form[el.dataset.f] = el.value; });
+  });
+}
+
+async function api(action){
+  const res = await fetch("/api/evaluate", {
+    method:"POST",
+    headers:{"content-type":"application/json","x-access-code":state.accessCode},
+    body: JSON.stringify({action, form:state.form, answers:state.answers})
+  });
+  const data = await res.json();
+  if(!res.ok) throw new Error(data.error || "Request failed");
+  return data;
+}
+
+function renderForm(){
+  app.innerHTML = `
+  <div class="grid">
+    <label class="full"><span class="lab">Company name</span>${txt("company","e.g. Northwind Joinery")}<span class="hint">Optional — used to personalise the output.</span></label>
+    <label><span class="lab">Industry *</span>${txt("industry","e.g. Accountancy, Manufacturing")}</label>
+    <label><span class="lab">Company size *</span>${sel("size")}</label>
+    <label><span class="lab">Annual turnover</span>${sel("turnover")}</label>
+    <label><span class="lab">AI maturity *</span>${sel("maturity")}</label>
+    <label><span class="lab">Primary goal</span>${sel("goal")}</label>
+    <label><span class="lab">Data availability & quality</span>${sel("data")}</label>
+    <label><span class="lab">Budget / appetite</span>${sel("budget")}</label>
+    <label><span class="lab">Current tech stack</span>${txt("stack","e.g. Xero, HubSpot, Microsoft 365")}</label>
+    <label class="full"><span class="lab">Known challenges</span>${area("challenges","What's slowing them down or frustrating them?")}</label>
+    <label class="full"><span class="lab">Repetitive / manual tasks</span>${area("tasks","e.g. manually copying invoices, answering the same emails")}<span class="hint">Your richest signal — the more specific, the better.</span></label>
+    <label class="full"><span class="lab">Compliance constraints</span>${txt("compliance","e.g. GDPR, FCA, ISO, client data rules")}</label>
+  </div>
+  ${state.error ? `<p class="err">${esc(state.error)}</p>` : ""}
+  <button class="primary" id="go">Continue to follow-up questions</button>
+  <p class="note">Industry, size and AI maturity are required.</p>`;
+  bindFields();
+  document.getElementById("go").addEventListener("click", onContinue);
+}
+
+async function onContinue(){
+  state.error = "";
+  const f = state.form;
+  if(!f.industry || !f.size || !f.maturity){ state.error="Please fill in industry, size and AI maturity."; return renderForm(); }
+  setLoading("Working out the best follow-up questions…");
+  try{
+    const {questions} = await api("questions");
+    state.questions = questions.length ? questions : ["What does success look like in 12 months?"];
+    state.answers = state.questions.map(q=>({q, a:""}));
+    state.stage = "questions";
+    renderQuestions();
+  }catch(e){ state.error = e.message; renderForm(); }
+}
+
+function renderQuestions(){
+  app.innerHTML = `
+  <h2 style="font-family:Fraunces,serif;font-size:24px;font-weight:600;margin:0 0 4px">A few follow-ups</h2>
+  <p class="lede" style="margin-bottom:20px">Answer what you can — anything you skip, Seed will reason around.</p>
+  ${state.questions.map((q,i)=>`
+    <label><span class="lab">Question ${i+1}</span>
+      <div style="color:var(--ink);margin-bottom:8px">${esc(q)}</div>
+      <textarea data-q="${i}" placeholder="Your answer…">${esc(state.answers[i].a)}</textarea>
+    </label>`).join("")}
+  ${state.error ? `<p class="err">${esc(state.error)}</p>` : ""}
+  <button class="primary" id="gen">Generate evaluation</button>
+  <p class="note"><button class="ghost" id="back" style="margin-top:4px">← Back to details</button></p>`;
+  app.querySelectorAll("[data-q]").forEach(el=>{
+    el.addEventListener("input", ()=>{ state.answers[el.dataset.q].a = el.value; });
+  });
+  document.getElementById("gen").addEventListener("click", onGenerate);
+  document.getElementById("back").addEventListener("click", ()=>{ state.stage="form"; renderForm(); });
+}
+
+async function onGenerate(){
+  state.error = "";
+  setLoading("Searching the web & building the evaluation…");
+  try{
+    const {report} = await api("report");
+    state.report = report;
+    state.stage = "report";
+    renderReport();
+  }catch(e){ state.error = e.message; renderQuestions(); }
+}
+
+function setLoading(msg){
+  app.innerHTML = `<button class="primary" disabled><span class="spin"></span>${esc(msg)}</button>
+  <p class="note">This can take 20–40 seconds while it searches.</p>`;
+}
+
+function pill(label, level, goodHigh){
+  let color = "var(--ink-soft)";
+  if(level==="Low") color = goodHigh ? "var(--ink-soft)" : "var(--good)";
+  if(level==="Medium") color = "var(--warn)";
+  if(level==="High") color = goodHigh ? "var(--good)" : "var(--high)";
+  return `<span class="pill" style="color:${color};border-color:${color}">${label}: ${esc(level)}</span>`;
+}
+function itemCard(it){
+  return `<div class="item"><div class="t">${esc(it.title)}</div><div class="d">${esc(it.detail)}</div>
+    <div class="tags">${pill("Effort", it.effort, false)}${pill("Impact", it.impact, true)}</div></div>`;
+}
+
+function gauge(score){
+  const r=42, c=2*Math.PI*r, off=c*(1-(score/100));
+  return `<svg width="104" height="104" viewBox="0 0 104 104">
+    <circle cx="52" cy="52" r="${r}" fill="none" stroke="var(--line)" stroke-width="9"/>
+    <circle cx="52" cy="52" r="${r}" fill="none" stroke="var(--seed)" stroke-width="9" stroke-linecap="round"
+      stroke-dasharray="${c}" stroke-dashoffset="${off}" transform="rotate(-90 52 52)"/>
+    <text x="52" y="58" text-anchor="middle" font-family="Fraunces,serif" font-size="26" font-weight="600" fill="var(--ink)">${score}</text>
+  </svg>`;
+}
+
+function renderReport(){
+  const r = state.report;
+  const title = state.form.company || state.form.industry;
+  app.innerHTML = `
+  <div class="topbar">
+    <h2>${esc(title)} — AI opportunities</h2>
+    <div style="display:flex;gap:8px">
+      <button class="ghost" id="pdf">Client PDF</button>
+      <button class="ghost" id="copy">Copy</button>
+      <button class="ghost" id="restart" style="background:var(--seed);color:#fbf9f2;border:none">New</button>
+    </div>
+  </div>
+  <div class="gaugewrap">
+    ${gauge(Math.max(0,Math.min(100, r.readinessScore||0)))}
+    <div><div class="num">AI readiness</div><p>${esc(r.scoreSummary||"")}</p></div>
+  </div>
+
+  <div class="sect"><h3>Quick wins (0–4 weeks)</h3></div>
+  ${(r.quickWins||[]).map(itemCard).join("")}
+
+  <div class="sect"><h3>Bigger opportunities</h3></div>
+  ${(r.opportunities||[]).map(itemCard).join("")}
+
+  <div class="sect"><h3>Tools worth a look</h3></div>
+  <div class="toollist">
+  ${(r.tools||[]).map(t=>`<div class="item"><div class="t">${esc(t.name)}${t.url?` — <a href="${esc(t.url)}" target="_blank" rel="noopener">visit</a>`:""}</div>
+    <div class="d">${esc(t.what)}</div>${t.pricing?`<div class="d" style="margin-top:4px;font-style:italic">${esc(t.pricing)}</div>`:""}</div>`).join("")}
+  </div>
+
+  <div class="sect"><h3>Roadmap</h3></div>
+  <div class="roadmap">
+    ${["d30","d60","d90"].map((k,i)=>`<div class="phase"><div class="ph">${["First 30 days","Days 30–60","Days 60–90"][i]}</div>
+      <ul>${((r.roadmap&&r.roadmap[k])||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`).join("")}
+  </div>
+
+  <div class="sect"><h3>Watch-outs</h3></div>
+  <ul class="plain">${(r.risks||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul>
+
+  <div class="sect"><h3>Recommended first step</h3></div>
+  <div class="first">${esc(r.firstStep||"")}</div>
+
+  <div class="sect"><h3>Questions to ask the client next</h3></div>
+  <ul class="plain">${(r.discoveryQuestions||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul>
+
+  <p class="disclaim">A starting point for conversation, not a final recommendation — sense-check tool names and pricing before quoting them to a client.</p>`;
+
+  document.getElementById("restart").addEventListener("click", ()=>{
+    state.stage="form"; state.report=null; state.error="";
+    state.form={company:"",industry:"",size:"",turnover:"",maturity:"",goal:"",challenges:"",tasks:"",stack:"",data:"",budget:"",compliance:""};
+    renderForm();
+  });
+  document.getElementById("copy").addEventListener("click", ()=>{
+    navigator.clipboard.writeText(reportToText(r, title));
+    const b=document.getElementById("copy"); b.textContent="Copied ✓"; setTimeout(()=>b.textContent="Copy",1600);
+  });
+  document.getElementById("pdf").addEventListener("click", ()=>{ buildHandoff(r, title); window.print(); });
+}
+
+function buildHandoff(r, title){
+  const date = new Date().toLocaleDateString("en-GB", {day:"numeric",month:"long",year:"numeric"});
+  const wins = (r.quickWins||[]).slice(0,3)
+    .map(w=>`<div class="win"><b>${esc(w.title)}.</b> ${esc(w.detail)}</div>`).join("");
+  const phase = (k)=> (((r.roadmap&&r.roadmap[k])||[]).slice(0,2).map(esc).join(" · ")) || "—";
+  document.getElementById("handoff").innerHTML = `
+    <div class="hd">
+      <div>
+        <div class="bd"><div class="dot"></div><b>Seed Digital</b></div>
+        <h2>AI Opportunity Snapshot</h2>
+      </div>
+      <div class="meta">${esc(title)}<br>${date}</div>
+    </div>
+    <div class="score"><div class="big">${Math.max(0,Math.min(100,r.readinessScore||0))}<span style="font-size:16px;color:var(--ink-soft)">/100</span></div>
+      <div><small>AI readiness</small>${esc(r.scoreSummary||"")}</div></div>
+    <h3>Where to start</h3>
+    <div class="start">${esc(r.firstStep||"")}</div>
+    <h3>Quick wins</h3>
+    ${wins}
+    <h3>The first 90 days</h3>
+    <div class="rm">
+      <div><div class="p">Days 1–30</div>${phase("d30")}</div>
+      <div><div class="p">Days 30–60</div>${phase("d60")}</div>
+      <div><div class="p">Days 60–90</div>${phase("d90")}</div>
+    </div>
+    <div class="ft"><span>Prepared by Seed Digital</span><span>seed-digital.ai · hello@seed-digital.ai</span></div>`;
+}
+
+function reportToText(r, title){
+  const L=[];
+  L.push(`${title} — AI opportunities`);
+  L.push(`AI readiness: ${r.readinessScore}/100 — ${r.scoreSummary}\n`);
+  const block=(h,arr)=>{ L.push(h.toUpperCase()); (arr||[]).forEach(it=>L.push(`• ${it.title} (Effort: ${it.effort}, Impact: ${it.impact}) — ${it.detail}`)); L.push(""); };
+  block("Quick wins", r.quickWins); block("Bigger opportunities", r.opportunities);
+  L.push("TOOLS"); (r.tools||[]).forEach(t=>L.push(`• ${t.name}${t.pricing?` (${t.pricing})`:""} — ${t.what}${t.url?` ${t.url}`:""}`)); L.push("");
+  L.push("ROADMAP"); ["d30","d60","d90"].forEach((k,i)=>{ L.push(["First 30 days","Days 30–60","Days 60–90"][i]+":"); ((r.roadmap&&r.roadmap[k])||[]).forEach(x=>L.push(`  - ${x}`)); }); L.push("");
+  L.push("WATCH-OUTS"); (r.risks||[]).forEach(x=>L.push(`• ${x}`)); L.push("");
+  L.push(`RECOMMENDED FIRST STEP\n${r.firstStep}\n`);
+  L.push("QUESTIONS TO ASK NEXT"); (r.discoveryQuestions||[]).forEach(x=>L.push(`• ${x}`));
+  return L.join("\n");
+}
+
+// optional access-code gate: if the server returns 401 the first time, prompt for a code
+renderForm();
+</script>
+</body>
+</html>
