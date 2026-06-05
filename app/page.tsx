@@ -3,6 +3,7 @@ import AIHero from './components/AIHero';
 import WhyNow from './components/WhyNow';
 import Audit from './components/Audit';
 import Journey from './components/Journey';
+import Capabilities from './components/Capabilities';
 import SupplementaryStrip from './components/SupplementaryStrip';
 import Credibility from './components/Credibility';
 import AIFAQ from './components/AIFAQ';
@@ -20,6 +21,7 @@ export default function Home() {
         <WhyNow />
         <Audit />
         <Journey />
+        <Capabilities />
         <Credibility />
         <SupplementaryStrip />
         <AIFAQ />
