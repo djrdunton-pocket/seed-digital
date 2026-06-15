@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Eyebrow from './Eyebrow';
 
 const stats = [
@@ -10,26 +11,40 @@ export default function Credibility() {
   return (
     <section id="about" className="bg-[#1a3a2a] text-[#f5f0e8] py-24 scroll-mt-16">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="text-[#f5f0e8]">
-          <Eyebrow>About</Eyebrow>
-        </div>
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div>
+            <div className="text-[#f5f0e8]">
+              <Eyebrow>About</Eyebrow>
+            </div>
 
-        <h2 className="mt-8 font-syne font-bold text-4xl md:text-5xl max-w-4xl">
-          Senior transformation expertise, made accessible.
-        </h2>
+            <h2 className="mt-8 font-syne font-bold text-4xl md:text-5xl">
+              Senior transformation expertise, made accessible.
+            </h2>
 
-        <div className="mt-8 space-y-6 text-lg text-[#f5f0e8]/70 max-w-3xl">
-          <p>
-            Seed Digital is led by Daniel Dunton, who has spent 17+ years
-            leading high-stakes digital transformation and AI programmes for
-            major organisations across financial services, healthcare, sport,
-            energy and publishing.
-          </p>
-          <p>
-            Now that same senior expertise is available to ambitious smaller
-            businesses, backed by a trusted network of specialists brought in as
-            each engagement needs.
-          </p>
+            <div className="mt-8 space-y-6 text-lg text-[#f5f0e8]/70">
+              <p>
+                Seed Digital is led by Daniel Dunton, who has spent 17+ years
+                leading high-stakes digital transformation and AI programmes for
+                major organisations across financial services, healthcare, sport,
+                energy and publishing.
+              </p>
+              <p>
+                Now that same senior expertise is available to ambitious smaller
+                businesses, backed by a trusted network of specialists brought in
+                as each engagement needs.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <Image
+              src="/dan_dunton_photo.jpeg"
+              alt="Daniel Dunton, founder of Seed Digital"
+              width={941}
+              height={1170}
+              className="w-full h-auto object-cover border border-[#f5f0e8]/15"
+            />
+          </div>
         </div>
 
         <div className="mt-16 grid sm:grid-cols-3 gap-8 border-t border-[#f5f0e8]/15 pt-12">
