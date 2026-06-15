@@ -18,20 +18,29 @@ export default function Credibility() {
             </div>
 
             <h2 className="mt-8 font-syne font-bold text-4xl md:text-5xl">
-              Senior transformation expertise, made accessible.
+              Hi, I&apos;m Dan.
             </h2>
 
             <div className="mt-8 space-y-6 text-lg text-[#f5f0e8]/70">
               <p>
-                Seed Digital is led by Daniel Dunton, who has spent 17+ years
+                I founded Seed Digital to bring senior AI transformation
+                expertise to ambitious smaller businesses. I have spent 17+ years
                 leading high-stakes digital transformation and AI programmes for
                 major organisations across financial services, healthcare, sport,
                 energy and publishing.
               </p>
               <p>
-                Now that same senior expertise is available to ambitious smaller
-                businesses, backed by a trusted network of specialists brought in
-                as each engagement needs.
+                Most of that work has meant taking on complex, difficult
+                engagements and making them work: finding where technology
+                genuinely earns its place, restoring delivery and rebuilding
+                trust with the people involved. I bring that same senior,
+                hands-on approach to every Seed engagement, backed by a trusted
+                network of specialists I bring in when the work needs them.
+              </p>
+              <p>
+                I am based in Bath and stay close to the work whatever the title.
+                I would rather tell you honestly where AI helps your business than
+                sell you something that does not fit.
               </p>
             </div>
           </div>
