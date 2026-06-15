@@ -18,29 +18,25 @@ export default function Credibility() {
             </div>
 
             <h2 className="mt-8 font-syne font-bold text-4xl md:text-5xl">
-              Hi, I&apos;m Dan.
+              Nice to meet you
             </h2>
 
             <div className="mt-8 space-y-6 text-lg text-[#f5f0e8]/70">
               <p>
-                I founded Seed Digital to bring senior AI transformation
-                expertise to ambitious smaller businesses. I have spent 17+ years
-                leading high-stakes digital transformation and AI programmes for
-                major organisations across financial services, healthcare, sport,
-                energy and publishing.
+                I am Daniel. I founded Seed Digital to bring senior AI
+                transformation expertise to ambitious smaller businesses. I have
+                spent 17+ years leading high-stakes digital transformation and
+                more recently AI programmes for major organisations across
+                financial services, healthcare, sport, energy and publishing.
               </p>
               <p>
-                Most of that work has meant taking on complex, difficult
-                engagements and making them work: finding where technology
-                genuinely earns its place, restoring delivery and rebuilding
-                trust with the people involved. I bring that same senior,
-                hands-on approach to every Seed engagement, backed by a trusted
-                network of specialists I bring in when the work needs them.
+                I bring that senior, hands-on approach to every Seed engagement,
+                backed by a trusted network of specialists I bring in when the
+                work needs them.
               </p>
               <p>
-                I am based in Bath and stay close to the work whatever the title.
-                I would rather tell you honestly where AI helps your business than
-                sell you something that does not fit.
+                I am based in Bath and would love to meet for a coffee and a chat
+                in Bath, Bristol or the surrounding parts of Somerset.
               </p>
             </div>
           </div>
