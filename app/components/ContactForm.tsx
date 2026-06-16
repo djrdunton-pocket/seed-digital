@@ -101,13 +101,13 @@ export default function ContactForm() {
 
   if (status === 'success') {
     return (
-      <div className="border border-[#1a3a2a]/20 p-8 bg-white">
+      <div className="border border-[#1E293B] p-8 bg-[#111827]">
         <div className="inline-flex items-center gap-2 mb-4">
-          <div className="w-1.5 h-1.5 rounded-full bg-[#c8a96e]" />
-          <span className="text-xs tracking-[0.2em] uppercase text-[#1a3a2a]/50">Message received</span>
+          <div className="w-1.5 h-1.5 rounded-full bg-[#22C55E]" />
+          <span className="text-xs tracking-[0.2em] uppercase text-[#94A3B8]">Message received</span>
         </div>
-        <h3 className="font-syne text-2xl font-bold text-[#1a3a2a] mb-3">Thank you.</h3>
-        <p className="text-sm text-[#1a3a2a]/60 leading-relaxed">Your message has been received. Daniel will be in touch within 24 hours.</p>
+        <h3 className="font-syne text-2xl font-bold text-[#E2E8F0] mb-3">Thank you.</h3>
+        <p className="text-sm text-[#94A3B8] leading-relaxed">Your message has been received. Daniel will be in touch within 24 hours.</p>
       </div>
     );
   }
@@ -122,50 +122,50 @@ export default function ContactForm() {
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="text-xs tracking-[0.15em] uppercase text-[#1a3a2a]/50 block mb-1.5">Your name *</label>
+            <label className="text-xs tracking-[0.15em] uppercase text-[#94A3B8] block mb-1.5">Your name *</label>
             <input
               type="text"
               name="name"
               required
               value={formData.name}
               onChange={handleChange}
-              className="w-full border border-[#1a3a2a]/30 bg-white px-4 py-3 text-sm text-[#1a3a2a] placeholder-[#1a3a2a]/30 focus:outline-none focus:border-[#1a3a2a] transition-colors"
+              className="w-full border border-[#334155] bg-[#0F172A] px-4 py-3 text-sm text-[#E2E8F0] placeholder-[#64748B] focus:outline-none focus:border-[#22C55E] transition-colors rounded-lg"
               placeholder="Your name"
             />
           </div>
           <div>
-            <label className="text-xs tracking-[0.15em] uppercase text-[#1a3a2a]/50 block mb-1.5">Email address *</label>
+            <label className="text-xs tracking-[0.15em] uppercase text-[#94A3B8] block mb-1.5">Email address *</label>
             <input
               type="email"
               name="email"
               required
               value={formData.email}
               onChange={handleChange}
-              className="w-full border border-[#1a3a2a]/30 bg-white px-4 py-3 text-sm text-[#1a3a2a] placeholder-[#1a3a2a]/30 focus:outline-none focus:border-[#1a3a2a] transition-colors"
+              className="w-full border border-[#334155] bg-[#0F172A] px-4 py-3 text-sm text-[#E2E8F0] placeholder-[#64748B] focus:outline-none focus:border-[#22C55E] transition-colors rounded-lg"
               placeholder="hello@yourbusiness.com"
             />
           </div>
         </div>
 
         <div>
-          <label className="text-xs tracking-[0.15em] uppercase text-[#1a3a2a]/50 block mb-1.5">Business name</label>
+          <label className="text-xs tracking-[0.15em] uppercase text-[#94A3B8] block mb-1.5">Business name</label>
           <input
             type="text"
             name="business_name"
             value={formData.business_name}
             onChange={handleChange}
-            className="w-full border border-[#1a3a2a]/30 bg-white px-4 py-3 text-sm text-[#1a3a2a] placeholder-[#1a3a2a]/30 focus:outline-none focus:border-[#1a3a2a] transition-colors"
+            className="w-full border border-[#334155] bg-[#0F172A] px-4 py-3 text-sm text-[#E2E8F0] placeholder-[#64748B] focus:outline-none focus:border-[#22C55E] transition-colors rounded-lg"
             placeholder="Your Business Ltd"
           />
         </div>
 
         <div>
-          <label className="text-xs tracking-[0.15em] uppercase text-[#1a3a2a]/50 block mb-1.5">What are you looking for?</label>
+          <label className="text-xs tracking-[0.15em] uppercase text-[#94A3B8] block mb-1.5">What are you looking for?</label>
           <select
             name="package"
             value={formData.package}
             onChange={handleChange}
-            className="w-full border border-[#1a3a2a]/30 bg-white px-4 py-3 text-sm text-[#1a3a2a] focus:outline-none focus:border-[#1a3a2a] transition-colors"
+            className="w-full border border-[#334155] bg-[#0F172A] px-4 py-3 text-sm text-[#E2E8F0] focus:outline-none focus:border-[#22C55E] transition-colors rounded-lg"
           >
             <option value="">Select an option</option>
             {enquiryOptions.map((opt) => (
@@ -175,14 +175,14 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label className="text-xs tracking-[0.15em] uppercase text-[#1a3a2a]/50 block mb-1.5">Tell us about your project *</label>
+          <label className="text-xs tracking-[0.15em] uppercase text-[#94A3B8] block mb-1.5">Tell us about your project *</label>
           <textarea
             name="message"
             required
             value={formData.message}
             onChange={handleChange}
             rows={5}
-            className="w-full border border-[#1a3a2a]/30 bg-white px-4 py-3 text-sm text-[#1a3a2a] placeholder-[#1a3a2a]/30 focus:outline-none focus:border-[#1a3a2a] transition-colors resize-none"
+            className="w-full border border-[#334155] bg-[#0F172A] px-4 py-3 text-sm text-[#E2E8F0] placeholder-[#64748B] focus:outline-none focus:border-[#22C55E] transition-colors resize-none rounded-lg"
             placeholder="Tell us about your business, what you need and your ideal timeline..."
           />
         </div>
@@ -197,7 +197,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={status === 'loading' || !turnstileToken}
-          className="bg-[#1a3a2a] text-[#f5f0e8] px-8 py-4 text-sm tracking-wide hover:bg-[#1a3a2a]/90 transition-colors disabled:opacity-50 self-start"
+          className="bg-[#A3E635] text-[#0F172A] px-8 py-4 text-sm tracking-wide hover:bg-[#A3E635]/90 transition-colors disabled:opacity-50 self-start rounded-xl"
         >
           {status === 'loading' ? 'Sending...' : 'Send message'}
         </button>

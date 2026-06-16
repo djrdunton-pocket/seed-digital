@@ -30,31 +30,31 @@ export default function Journey() {
       <div className="max-w-6xl mx-auto px-6">
         <Eyebrow>The journey</Eyebrow>
 
-        <h2 className="mt-8 font-syne font-bold text-4xl md:text-5xl text-[#1a3a2a]">
+        <h2 className="mt-8 font-syne font-bold text-4xl md:text-5xl text-[#E2E8F0]">
           From insight to transformation.
         </h2>
 
-        <p className="mt-6 text-lg text-[#1a3a2a]/70 max-w-2xl">
+        <p className="mt-6 text-lg text-[#94A3B8] max-w-2xl">
           The audit is the start. We can guide or deliver every step from there.
         </p>
 
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service) => (
-            <div key={service.number} className="border border-[#1a3a2a]/15 p-8 flex flex-col">
-              <span className="font-syne font-light text-2xl text-[#c8a96e]">
+            <div key={service.number} className="border border-[#1E293B] p-8 flex flex-col rounded-2xl">
+              <span className="font-syne font-light text-2xl text-[#22C55E]">
                 {service.number}
               </span>
-              <h3 className="mt-6 font-syne font-bold text-xl text-[#1a3a2a]">
+              <h3 className="mt-6 font-syne font-bold text-xl text-[#E2E8F0]">
                 {service.title}
               </h3>
-              <p className="mt-3 text-[#1a3a2a]/70">{service.description}</p>
+              <p className="mt-3 text-[#94A3B8]">{service.description}</p>
             </div>
           ))}
         </div>
 
         <Link
           href="/services"
-          className="mt-10 inline-block text-sm tracking-wide text-[#1a3a2a] border-b border-[#c8a96e] pb-1 hover:text-[#1a3a2a]/70 transition-colors"
+          className="mt-10 inline-block text-sm tracking-wide text-[#E2E8F0] border-b border-[#22C55E] pb-1 hover:text-[#94A3B8] transition-colors"
         >
           Explore our services &rarr;
         </Link>

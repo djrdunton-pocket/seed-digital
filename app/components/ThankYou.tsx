@@ -50,13 +50,13 @@ export default function ThankYou() {
     <section className="min-h-[70vh] flex items-center pt-16">
       <div className="max-w-3xl mx-auto px-6 py-24 text-center">
         <div className="inline-flex items-center gap-2 mb-6">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#c8a96e]" />
-          <span className="text-xs tracking-[0.2em] uppercase text-[#1a3a2a]/50">Booking confirmed</span>
+          <span className="w-1.5 h-1.5 rounded-full bg-[#22C55E]" />
+          <span className="text-xs tracking-[0.2em] uppercase text-[#94A3B8]">Booking confirmed</span>
         </div>
-        <h1 className="font-syne font-light text-4xl md:text-6xl text-[#1a3a2a] leading-tight">
+        <h1 className="font-syne font-light text-4xl md:text-6xl text-[#E2E8F0] leading-tight">
           Thank you. Your call is booked.
         </h1>
-        <p className="mt-8 text-lg text-[#1a3a2a]/70">
+        <p className="mt-8 text-lg text-[#94A3B8]">
           You will get a calendar invite by email with the joining details. In
           the meantime, have a think about where AI could make the biggest
           difference in your business, and we will dig into it together.
@@ -64,13 +64,13 @@ export default function ThankYou() {
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/ai-audit"
-            className="px-8 py-4 text-sm tracking-wide text-center bg-[#1a3a2a] text-[#f5f0e8] hover:bg-[#1a3a2a]/90 transition-colors"
+            className="px-8 py-4 text-sm tracking-wide text-center bg-[#A3E635] text-[#0F172A] hover:bg-[#A3E635]/90 transition-colors rounded-xl"
           >
             Read about the AI Audit
           </Link>
           <Link
             href="/"
-            className="px-8 py-4 text-sm tracking-wide text-center border border-[#1a3a2a] text-[#1a3a2a] hover:bg-[#1a3a2a]/5 transition-colors"
+            className="px-8 py-4 text-sm tracking-wide text-center border border-[#334155] text-[#E2E8F0] hover:bg-[#111827] transition-colors rounded-xl"
           >
             Back to home
           </Link>

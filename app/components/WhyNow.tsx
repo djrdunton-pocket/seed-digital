@@ -2,9 +2,9 @@ import Eyebrow from './Eyebrow';
 
 export default function WhyNow() {
   return (
-    <section className="bg-[#1a3a2a] text-[#f5f0e8] py-24">
+    <section className="bg-[#111827] text-[#E2E8F0] py-24">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="text-[#f5f0e8]">
+        <div className="text-[#E2E8F0]">
           <Eyebrow>Why now</Eyebrow>
         </div>
 
@@ -12,7 +12,7 @@ export default function WhyNow() {
           AI is moving fast. Most businesses don&apos;t know where to start.
         </h2>
 
-        <p className="mt-8 text-lg text-[#f5f0e8]/70 max-w-3xl">
+        <p className="mt-8 text-lg text-[#94A3B8] max-w-3xl">
           The tools change weekly and the hype is relentless. Somewhere in the
           noise is real opportunity, doing more with less, serving customers
           better, freeing your team from work machines should be doing. The hard

@@ -9,11 +9,11 @@ const stats = [
 
 export default function Credibility() {
   return (
-    <section id="about" className="bg-[#1a3a2a] text-[#f5f0e8] py-24 scroll-mt-16">
+    <section id="about" className="bg-[#111827] text-[#E2E8F0] py-24 scroll-mt-16">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div>
-            <div className="text-[#f5f0e8]">
+            <div className="text-[#E2E8F0]">
               <Eyebrow>About</Eyebrow>
             </div>
 
@@ -21,7 +21,7 @@ export default function Credibility() {
               Nice to meet you
             </h2>
 
-            <div className="mt-8 space-y-6 text-lg text-[#f5f0e8]/70">
+            <div className="mt-8 space-y-6 text-lg text-[#94A3B8]">
               <p>
                 I am Daniel. I founded Seed Digital to bring senior AI
                 transformation expertise to ambitious smaller businesses. I have
@@ -47,18 +47,18 @@ export default function Credibility() {
               alt="Daniel Dunton, founder of Seed Digital"
               width={1339}
               height={1514}
-              className="w-full h-auto object-cover border border-[#f5f0e8]/15"
+              className="w-full h-auto object-cover border border-[#1E293B]"
             />
           </div>
         </div>
 
-        <div className="mt-16 grid sm:grid-cols-3 gap-8 border-t border-[#f5f0e8]/15 pt-12">
+        <div className="mt-16 grid sm:grid-cols-3 gap-8 border-t border-[#1E293B] pt-12">
           {stats.map((stat) => (
             <div key={stat.label}>
-              <p className="font-syne font-light text-5xl text-[#c8a96e]">
+              <p className="font-syne font-light text-5xl text-[#22C55E]">
                 {stat.value}
               </p>
-              <p className="mt-3 text-[#f5f0e8]/70">{stat.label}</p>
+              <p className="mt-3 text-[#94A3B8]">{stat.label}</p>
             </div>
           ))}
         </div>

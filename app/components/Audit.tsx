@@ -16,11 +16,11 @@ export default function Audit() {
       <div className="max-w-6xl mx-auto px-6">
         <Eyebrow>Start here</Eyebrow>
 
-        <h2 className="mt-8 font-syne font-bold text-4xl md:text-5xl text-[#1a3a2a]">
+        <h2 className="mt-8 font-syne font-bold text-4xl md:text-5xl text-[#E2E8F0]">
           The AI Audit
         </h2>
 
-        <p className="mt-6 text-lg text-[#1a3a2a]/70 max-w-2xl">
+        <p className="mt-6 text-lg text-[#94A3B8] max-w-2xl">
           A focused look at your business to find where AI can make the biggest
           difference, and exactly how to get there. The recommended starting
           point.
@@ -28,37 +28,37 @@ export default function Audit() {
 
         <div className="mt-12 grid lg:grid-cols-2 gap-12 items-start">
           <div>
-            <h3 className="font-syne font-semibold text-xl text-[#1a3a2a]">What you get</h3>
+            <h3 className="font-syne font-semibold text-xl text-[#E2E8F0]">What you get</h3>
             <ul className="mt-6 space-y-4">
               {whatYouGet.map((item) => (
                 <li key={item} className="flex gap-4">
-                  <span aria-hidden="true" className="text-[#c8a96e] font-semibold">
+                  <span aria-hidden="true" className="text-[#22C55E] font-semibold">
                     &rarr;
                   </span>
-                  <span className="text-[#1a3a2a]/80">{item}</span>
+                  <span className="text-[#94A3B8]">{item}</span>
                 </li>
               ))}
             </ul>
             <Link
               href="/ai-audit"
-              className="mt-8 inline-block text-sm tracking-wide text-[#1a3a2a] border-b border-[#c8a96e] pb-1 hover:text-[#1a3a2a]/70 transition-colors"
+              className="mt-8 inline-block text-sm tracking-wide text-[#E2E8F0] border-b border-[#22C55E] pb-1 hover:text-[#94A3B8] transition-colors"
             >
               See full audit details &rarr;
             </Link>
           </div>
 
-          <div className="bg-[#f5f0e8] border border-[#1a3a2a]/15 p-8 md:p-10">
-            <p className="text-xs tracking-[0.2em] uppercase text-[#1a3a2a]/70">
+          <div className="bg-[#111827] border border-[#1E293B] p-8 md:p-10 rounded-2xl">
+            <p className="text-xs tracking-[0.2em] uppercase text-[#94A3B8]">
               The AI Audit
             </p>
-            <p className="mt-6 font-dm-sans font-light text-5xl md:text-6xl text-[#1a3a2a]">
+            <p className="mt-6 font-dm-sans font-light text-5xl md:text-6xl text-[#E2E8F0]">
               £1,999
             </p>
-            <p className="mt-4 text-[#1a3a2a]/70">Delivered in 2 weeks</p>
+            <p className="mt-4 text-[#94A3B8]">Delivered in 2 weeks</p>
             <a
               href={CALENDLY_URL}
               {...externalLinkProps}
-              className="mt-8 block w-full px-8 py-4 text-sm tracking-wide text-center bg-[#1a3a2a] text-[#f5f0e8] hover:bg-[#1a3a2a]/90 transition-colors"
+              className="mt-8 block w-full px-8 py-4 text-sm tracking-wide text-center bg-[#A3E635] text-[#0F172A] hover:bg-[#A3E635]/90 transition-colors rounded-xl"
             >
               Book your audit
             </a>

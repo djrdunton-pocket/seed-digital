@@ -35,10 +35,10 @@ export default function ServicesPage() {
         <section className="pt-24 pb-4">
           <div className="max-w-6xl mx-auto px-6">
             <Eyebrow>AI Services · Bath · Bristol · Somerset</Eyebrow>
-            <h1 className="mt-8 font-syne font-light text-5xl md:text-7xl leading-tight text-[#1a3a2a] max-w-3xl">
+            <h1 className="mt-8 font-syne font-light text-5xl md:text-7xl leading-tight text-[#E2E8F0] max-w-3xl">
               From insight to transformation.
             </h1>
-            <p className="mt-8 text-lg md:text-xl text-[#1a3a2a]/70 max-w-2xl">
+            <p className="mt-8 text-lg md:text-xl text-[#94A3B8] max-w-2xl">
               The AI Audit shows you where AI fits and what to do first. These
               are the services that turn that roadmap into real, working change.
               Take the plan and run with it yourself, or bring us in to deliver
@@ -48,13 +48,13 @@ export default function ServicesPage() {
               <a
                 href={CALENDLY_URL}
                 {...externalLinkProps}
-                className="px-8 py-4 text-sm tracking-wide text-center bg-[#1a3a2a] text-[#f5f0e8] hover:bg-[#1a3a2a]/90 transition-colors"
+                className="px-8 py-4 text-sm tracking-wide text-center bg-[#A3E635] text-[#0F172A] hover:bg-[#A3E635]/90 transition-colors rounded-xl"
               >
                 Book a discovery call
               </a>
               <Link
                 href="/ai-audit"
-                className="px-8 py-4 text-sm tracking-wide text-center border border-[#1a3a2a] text-[#1a3a2a] hover:bg-[#1a3a2a]/5 transition-colors"
+                className="px-8 py-4 text-sm tracking-wide text-center border border-[#334155] text-[#E2E8F0] hover:bg-[#111827] transition-colors rounded-xl"
               >
                 Start with an audit
               </Link>

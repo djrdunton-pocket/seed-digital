@@ -29,20 +29,20 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <section id="faq" className="bg-[#f5f0e8] py-24 border-t border-[#1a3a2a]/10">
+    <section id="faq" className="bg-[#0F172A] py-24 border-t border-[#1E293B]">
       <div className="max-w-6xl mx-auto px-6">
         <div className="mb-16">
           <div className="inline-flex items-center gap-2 mb-4">
-            <div className="w-1.5 h-1.5 rounded-full bg-[#c8a96e]" />
-            <span className="text-xs tracking-[0.2em] uppercase text-[#1a3a2a]/50">FAQ</span>
+            <div className="w-1.5 h-1.5 rounded-full bg-[#22C55E]" />
+            <span className="text-xs tracking-[0.2em] uppercase text-[#94A3B8]">FAQ</span>
           </div>
-          <h2 className="font-syne text-4xl md:text-5xl font-light text-[#1a3a2a]">Common questions</h2>
+          <h2 className="font-syne text-4xl md:text-5xl font-light text-[#E2E8F0]">Common questions</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {faqs.map((faq) => (
-            <div key={faq.q} className="border-t border-[#1a3a2a]/10 pt-6">
-              <h3 className="font-syne text-lg text-[#1a3a2a] mb-3">{faq.q}</h3>
-              <p className="text-sm text-[#1a3a2a]/60 leading-relaxed">{faq.a}</p>
+            <div key={faq.q} className="border-t border-[#1E293B] pt-6">
+              <h3 className="font-syne text-lg text-[#E2E8F0] mb-3">{faq.q}</h3>
+              <p className="text-sm text-[#94A3B8] leading-relaxed">{faq.a}</p>
             </div>
           ))}
         </div>

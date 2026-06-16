@@ -27,18 +27,18 @@ const steps = [
   
   export default function HowItWorks() {
     return (
-      <section className="bg-[#f5f0e8] py-24">
+      <section className="bg-[#0F172A] py-24">
         <div className="max-w-6xl mx-auto px-6">
   
           {/* Header */}
           <div className="mb-16">
             <div className="inline-flex items-center gap-2 mb-4">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#c8a96e]" />
-              <span className="text-xs tracking-[0.2em] uppercase text-[#1a3a2a]/50">
+              <div className="w-1.5 h-1.5 rounded-full bg-[#22C55E]" />
+              <span className="text-xs tracking-[0.2em] uppercase text-[#94A3B8]">
                 Process
               </span>
             </div>
-            <h2 className="font-syne text-4xl md:text-5xl font-light text-[#1a3a2a]">
+            <h2 className="font-syne text-4xl md:text-5xl font-light text-[#E2E8F0]">
               How it works
             </h2>
           </div>
@@ -50,16 +50,16 @@ const steps = [
   
                 {/* Connector line */}
                 {index < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-6 left-[calc(50%+1.5rem)] right-0 h-px bg-[#1a3a2a]/10" />
+                  <div className="hidden md:block absolute top-6 left-[calc(50%+1.5rem)] right-0 h-px bg-[#1E293B]" />
                 )}
   
-                <div className="font-syne text-5xl font-light text-[#c8a96e] mb-4">
+                <div className="font-syne text-5xl font-light text-[#22C55E] mb-4">
                   {step.number}
                 </div>
-                <h3 className="font-syne text-lg text-[#1a3a2a] mb-3">
+                <h3 className="font-syne text-lg text-[#E2E8F0] mb-3">
                   {step.title}
                 </h3>
-                <p className="text-sm text-[#1a3a2a]/60 leading-relaxed">
+                <p className="text-sm text-[#94A3B8] leading-relaxed">
                   {step.description}
                 </p>
               </div>

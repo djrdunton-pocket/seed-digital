@@ -39,19 +39,19 @@ const faqSchema = {
 
 export default function AIFAQ() {
   return (
-    <section id="faq" className="py-24 border-t border-[#1a3a2a]/10">
+    <section id="faq" className="py-24 border-t border-[#1E293B]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <div className="max-w-6xl mx-auto px-6">
         <Eyebrow>FAQ</Eyebrow>
-        <h2 className="mt-8 font-syne font-bold text-4xl md:text-5xl text-[#1a3a2a]">
+        <h2 className="mt-8 font-syne font-bold text-4xl md:text-5xl text-[#E2E8F0]">
           Common questions
         </h2>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
           {faqs.map((faq) => (
-            <div key={faq.q} className="border-t border-[#1a3a2a]/10 pt-6">
-              <h3 className="font-syne text-lg text-[#1a3a2a] mb-3">{faq.q}</h3>
-              <p className="text-sm text-[#1a3a2a]/60 leading-relaxed">{faq.a}</p>
+            <div key={faq.q} className="border-t border-[#1E293B] pt-6">
+              <h3 className="font-syne text-lg text-[#E2E8F0] mb-3">{faq.q}</h3>
+              <p className="text-sm text-[#94A3B8] leading-relaxed">{faq.a}</p>
             </div>
           ))}
         </div>

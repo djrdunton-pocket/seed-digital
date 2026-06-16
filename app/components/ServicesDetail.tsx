@@ -38,10 +38,10 @@ export default function ServicesDetail() {
     <section className="py-24">
       <div className="max-w-6xl mx-auto px-6">
         <Eyebrow>After the audit</Eyebrow>
-        <h2 className="mt-8 font-syne font-bold text-4xl md:text-5xl text-[#1a3a2a]">
+        <h2 className="mt-8 font-syne font-bold text-4xl md:text-5xl text-[#E2E8F0]">
           Our services
         </h2>
-        <p className="mt-6 text-lg text-[#1a3a2a]/70 max-w-2xl">
+        <p className="mt-6 text-lg text-[#94A3B8] max-w-2xl">
           The audit tells you what is worth doing. These are how we help you do
           it. Take the plan and run with it yourself, or bring us in to deliver
           any part.
@@ -50,15 +50,15 @@ export default function ServicesDetail() {
         <div className="mt-12 grid md:grid-cols-2 gap-x-12 gap-y-14">
           {services.map((service) => (
             <div key={service.number}>
-              <span className="font-syne font-light text-2xl text-[#c8a96e]">
+              <span className="font-syne font-light text-2xl text-[#22C55E]">
                 {service.number}
               </span>
-              <h3 className="mt-4 font-syne font-bold text-2xl text-[#1a3a2a]">
+              <h3 className="mt-4 font-syne font-bold text-2xl text-[#E2E8F0]">
                 {service.title}
               </h3>
-              <p className="mt-4 text-[#1a3a2a]/70">{service.body}</p>
-              <p className="mt-4 text-sm text-[#1a3a2a]/60">
-                <span className="text-[#1a3a2a] font-semibold">What you can expect: </span>
+              <p className="mt-4 text-[#94A3B8]">{service.body}</p>
+              <p className="mt-4 text-sm text-[#94A3B8]">
+                <span className="text-[#E2E8F0] font-semibold">What you can expect: </span>
                 {service.outcome}
               </p>
             </div>

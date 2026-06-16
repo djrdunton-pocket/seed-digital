@@ -25,22 +25,22 @@ const steps = [
 
 export default function HowItWorksAI() {
   return (
-    <section id="how" className="bg-[#1a3a2a]/[0.04] py-24 scroll-mt-16">
+    <section id="how" className="bg-[#111827] py-24 scroll-mt-16">
       <div className="max-w-6xl mx-auto px-6">
         <Eyebrow>How it works</Eyebrow>
 
-        <h2 className="mt-8 font-syne font-bold text-4xl md:text-5xl text-[#1a3a2a]">
+        <h2 className="mt-8 font-syne font-bold text-4xl md:text-5xl text-[#E2E8F0]">
           Simple, structured, low-risk.
         </h2>
 
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12">
           {steps.map((step) => (
             <div key={step.number}>
-              <span className="font-syne font-light text-6xl text-[#c8a96e]">
+              <span className="font-syne font-light text-6xl text-[#22C55E]">
                 {step.number}
               </span>
-              <h3 className="mt-6 font-syne font-bold text-xl text-[#1a3a2a]">{step.title}</h3>
-              <p className="mt-3 text-[#1a3a2a]/70">{step.description}</p>
+              <h3 className="mt-6 font-syne font-bold text-xl text-[#E2E8F0]">{step.title}</h3>
+              <p className="mt-3 text-[#94A3B8]">{step.description}</p>
             </div>
           ))}
         </div>
