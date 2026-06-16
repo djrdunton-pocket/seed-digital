@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { CALENDLY_URL, externalLinkProps } from './constants';
 
 const links = [
@@ -18,15 +17,8 @@ export default function Nav() {
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-[#f5f0e8]/80 backdrop-blur border-b border-[#1a3a2a]/10">
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" aria-label="Seed Digital home" className="flex items-center">
-          <Image
-            src="/Seed-logo_2_june26.png"
-            alt="Seed Digital"
-            width={1600}
-            height={912}
-            priority
-            className="h-10 w-auto"
-          />
+        <Link href="/" aria-label="Seed Digital home" className="font-syne text-lg font-bold tracking-tight">
+          <span className="text-[#1a3a2a]">Seed</span> <span className="text-[#c8a96e]">Digital</span>
         </Link>
 
         <div className="flex items-center gap-8">
