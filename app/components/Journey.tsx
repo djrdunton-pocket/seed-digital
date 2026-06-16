@@ -35,8 +35,7 @@ export default function Journey() {
         </h2>
 
         <p className="mt-6 text-lg text-[#1a3a2a]/70 max-w-2xl">
-          The audit is the start. Where you take it next is up to you, we can
-          guide or deliver every step.
+          The audit is the start. We can guide or deliver every step from there.
         </p>
 
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
