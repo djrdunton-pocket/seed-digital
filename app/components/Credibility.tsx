@@ -43,10 +43,10 @@ export default function Credibility() {
 
           <div>
             <Image
-              src="/dan_dunton_photo.jpeg"
+              src="/dan_dunton_photo2.jpeg"
               alt="Daniel Dunton, founder of Seed Digital"
-              width={941}
-              height={1170}
+              width={1339}
+              height={1514}
               className="w-full h-auto object-cover border border-[#f5f0e8]/15"
             />
           </div>
