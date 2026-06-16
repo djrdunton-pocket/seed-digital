@@ -22,10 +22,10 @@ export default function Nav() {
           <Image
             src="/seed-logo-nav.png"
             alt="Seed Digital"
-            width={1523}
-            height={1024}
+            width={992}
+            height={301}
             priority
-            className="h-11 w-auto"
+            className="h-9 md:h-10 w-auto"
           />
         </Link>
 
