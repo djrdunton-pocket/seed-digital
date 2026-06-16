@@ -17,11 +17,14 @@ export default function AIHero() {
         <div className="max-w-3xl">
           <Eyebrow>AI consultancy · Bath · Bristol · Somerset</Eyebrow>
 
-          <h1 className="mt-8 font-syne font-light text-5xl md:text-7xl leading-tight text-[#1a3a2a]">
-            Find where AI is worth it. And where it isn&apos;t.
+          <h1 className="mt-8 font-syne font-bold tracking-tight text-5xl md:text-7xl leading-[1.05] text-[#E2E8F0]">
+            Find where AI is worth it.{' '}
+            <span className="bg-gradient-to-r from-[#22C55E] to-[#A3E635] bg-clip-text text-transparent">
+              And where it isn&apos;t.
+            </span>
           </h1>
 
-          <p className="mt-8 text-lg md:text-xl text-[#1a3a2a]/70 max-w-2xl">
+          <p className="mt-8 text-lg md:text-xl text-[#94A3B8] max-w-2xl">
             Most AI advice is hype. I help small businesses across Bath, Bristol
             and Somerset find the few places AI genuinely saves time and money,
             then build them. No jargon and no overselling. I will tell you when
@@ -32,24 +35,24 @@ export default function AIHero() {
             <a
               href={CALENDLY_URL}
               {...externalLinkProps}
-              className="px-8 py-4 text-sm tracking-wide text-center bg-[#1a3a2a] text-[#f5f0e8] hover:bg-[#1a3a2a]/90 transition-colors"
+              className="px-8 py-4 text-sm tracking-wide text-center font-semibold rounded-xl bg-[#A3E635] text-[#0F172A] hover:bg-[#A3E635]/90 transition-colors"
             >
               Book a discovery call
             </a>
             <Link
               href="/ai-audit"
-              className="px-8 py-4 text-sm tracking-wide text-center border border-[#1a3a2a] text-[#1a3a2a] hover:bg-[#1a3a2a]/5 transition-colors"
+              className="px-8 py-4 text-sm tracking-wide text-center rounded-xl border border-[#334155] text-[#E2E8F0] hover:bg-[#111827] transition-colors"
             >
               Start with an audit
             </Link>
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-[#1a3a2a]/15">
-          <ul className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-[#1a3a2a]/70">
+        <div className="mt-16 pt-8 border-t border-[#1E293B]">
+          <ul className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-[#94A3B8]">
             {trustItems.map((item) => (
               <li key={item} className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#c8a96e]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#22C55E]" />
                 {item}
               </li>
             ))}

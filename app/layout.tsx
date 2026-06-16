@@ -1,11 +1,10 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { DM_Sans, Syne } from 'next/font/google';
+import { Sora } from 'next/font/google';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import Script from 'next/script';
 
-const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans' });
-const syne = Syne({ subsets: ['latin'], variable: '--font-syne' });
+const sora = Sora({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-sora' });
 
 export const metadata: Metadata = {
   title: 'Seed Digital · AI transformation consultancy for Bath, Bristol & Somerset',
@@ -37,7 +36,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${syne.variable}`}>
+    <html lang="en" className={sora.variable}>
       <head>
         <Script defer src="https://plausible.io/js/pa-PbeuAfEJtpuArGNHr53ch.js" strategy="afterInteractive" />
         <Script id="plausible-init" strategy="afterInteractive">
