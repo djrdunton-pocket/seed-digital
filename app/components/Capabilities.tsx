@@ -4,11 +4,11 @@ import Eyebrow from './Eyebrow';
 const capabilities = [
   {
     title: 'Find the opportunity',
-    body: 'Our core work. A clear, prioritised view of where AI genuinely earns its place in your business, based on how you actually operate. Not a generic pitch, a specific diagnosis of where your team’s time is going and where it should not be.',
+    body: 'My core work. A clear, prioritised view of where AI genuinely earns its place in your business, based on how you actually operate. Not a generic pitch, a specific diagnosis of where your team’s time is going and where it should not be.',
   },
   {
     title: 'Automate the busy work',
-    body: 'We pinpoint the repetitive, manual tasks quietly draining your best people, then automate them, with a person in the loop wherever judgement matters.',
+    body: 'I pinpoint the repetitive, manual tasks quietly draining your best people, then automate them, with a person in the loop wherever judgement matters.',
   },
   {
     title: 'Put your knowledge to work',
@@ -24,17 +24,17 @@ export default function Capabilities() {
   return (
     <section className="py-24 border-t border-[#1E293B]">
       <div className="max-w-6xl mx-auto px-6">
-        <Eyebrow>What we do</Eyebrow>
+        <Eyebrow>What I do</Eyebrow>
 
         <h2 className="mt-8 font-syne font-bold text-4xl md:text-5xl text-[#E2E8F0]">
           AI consultancy, grounded in delivery.
         </h2>
 
         <p className="mt-6 text-lg text-[#94A3B8] max-w-3xl">
-          Our core capability is AI consultancy: cutting through the noise to
+          My core capability is AI consultancy: cutting through the noise to
           work out where AI genuinely fits your business, what is worth doing,
           and in what order. Most engagements start with the Audit. When you
-          want the plan delivered and not just advised, we build it too,
+          want the plan delivered and not just advised, I build it too,
           choosing the right tool for each job.
         </p>
 
@@ -49,7 +49,7 @@ export default function Capabilities() {
 
         <div className="mt-8 bg-[#111827] p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <p className="text-[#94A3B8] max-w-2xl">
-            You do not have to take our word for it. The fixed-price AI Audit is
+            You do not have to take my word for it. The fixed-price AI Audit is
             a low-risk way to see exactly where the value is in your business,
             before you commit to anything.
           </p>

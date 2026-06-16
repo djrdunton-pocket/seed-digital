@@ -2,10 +2,9 @@ import Nav from './components/Nav';
 import AIHero from './components/AIHero';
 import WhyNow from './components/WhyNow';
 import Audit from './components/Audit';
-import Journey from './components/Journey';
+import Credibility from './components/Credibility';
 import Capabilities from './components/Capabilities';
 import SupplementaryStrip from './components/SupplementaryStrip';
-import Credibility from './components/Credibility';
 import AIFAQ from './components/AIFAQ';
 import ContactCTA from './components/ContactCTA';
 import SiteFooter from './components/SiteFooter';
@@ -20,9 +19,8 @@ export default function Home() {
         <AIHero />
         <WhyNow />
         <Audit />
-        <Journey />
-        <Capabilities />
         <Credibility />
+        <Capabilities />
         <SupplementaryStrip />
         <AIFAQ />
         <ContactCTA />

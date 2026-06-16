@@ -17,7 +17,7 @@ export default function WhyNow() {
           noise is real opportunity, doing more with less, serving customers
           better, freeing your team from work machines should be doing. The hard
           part isn&apos;t the technology. It&apos;s knowing what applies to your
-          business, and in what order. That&apos;s where we come in.
+          business, and in what order. That&apos;s where I come in.
         </p>
       </div>
     </section>
