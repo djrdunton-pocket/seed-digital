@@ -6,44 +6,44 @@
 <meta name="robots" content="noindex,nofollow" />
 <title>Seed Digital — AI Adoption Evaluator</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <style>
   :root{
-    --bg:#f3efe4; --ink:#16271d; --ink-soft:#3a4b41; --line:#d6cfbb;
-    --card:#fbf9f2; --accent:#c0703a; --accent-deep:#9a5526; --seed:#2f5a3f;
-    --good:#3d7a4f; --warn:#c0703a; --high:#a23b2a;
+    --bg:#0F172A; --ink:#E2E8F0; --ink-soft:#94A3B8; --line:#1E293B;
+    --card:#111827; --accent:#22C55E; --accent-deep:#16A34A; --seed:#22C55E;
+    --good:#22C55E; --warn:#FBBF24; --high:#F87171;
   }
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Newsreader",serif;font-size:16px;line-height:1.55}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Sora",sans-serif;font-size:16px;line-height:1.55}
   .wrap{max-width:780px;margin:0 auto;padding:40px 22px 72px}
   .brand{display:flex;align-items:center;gap:12px;margin-bottom:6px}
   .seed-dot{width:26px;height:26px;border-radius:50% 50% 50% 0;background:var(--seed);transform:rotate(-45deg)}
   .brand span{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--seed);font-weight:600}
-  h1{font-family:"Fraunces",serif;font-size:40px;font-weight:600;line-height:1.05;margin:8px 0 6px;letter-spacing:-.01em}
+  h1{font-family:"Sora",sans-serif;font-size:40px;font-weight:600;line-height:1.05;margin:8px 0 6px;letter-spacing:-.01em}
   .lede{color:var(--ink-soft);font-size:17px;margin:0;max-width:580px}
   .rule{height:1px;background:var(--line);margin:30px 0}
   label{display:block;margin-bottom:18px}
   label .lab{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:6px;font-weight:600}
   label .hint{display:block;font-size:12px;color:var(--ink-soft);opacity:.8;margin-top:4px}
-  input,select,textarea{width:100%;padding:11px 13px;background:var(--card);border:1px solid var(--line);border-radius:8px;font-family:"Newsreader",serif;font-size:16px;color:var(--ink);outline:none}
+  input,select,textarea{width:100%;padding:11px 13px;background:var(--card);border:1px solid var(--line);border-radius:8px;font-family:"Sora",sans-serif;font-size:16px;color:var(--ink);outline:none}
   textarea{min-height:70px;resize:vertical}
   .grid{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}
   .full{grid-column:1 / -1}
-  button.primary{width:100%;padding:15px 20px;border:none;border-radius:10px;background:var(--seed);color:#fbf9f2;font-family:"Fraunces",serif;font-size:18px;font-weight:600;cursor:pointer;transition:opacity .2s}
+  button.primary{width:100%;padding:15px 20px;border:none;border-radius:10px;background:#A3E635;color:#0F172A;font-family:"Sora",sans-serif;font-size:18px;font-weight:600;cursor:pointer;transition:opacity .2s}
   button.primary:disabled{background:var(--line);color:var(--ink-soft);cursor:not-allowed}
-  button.ghost{padding:8px 14px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font-family:"Newsreader",serif;font-size:14px;cursor:pointer}
+  button.ghost{padding:8px 14px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font-family:"Sora",sans-serif;font-size:14px;cursor:pointer}
   .note{font-size:13px;color:var(--ink-soft);text-align:center;margin-top:8px}
   .err{color:var(--accent-deep);margin:6px 0}
-  .spin{display:inline-block;width:16px;height:16px;border:2px solid #fbf9f2;border-top-color:transparent;border-radius:50%;animation:spin .8s linear infinite;vertical-align:-3px;margin-right:8px}
+  .spin{display:inline-block;width:16px;height:16px;border:2px solid #0F172A;border-top-color:transparent;border-radius:50%;animation:spin .8s linear infinite;vertical-align:-3px;margin-right:8px}
   @keyframes spin{to{transform:rotate(360deg)}}
   /* report */
   .topbar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:18px}
-  .topbar h2{font-family:"Fraunces",serif;font-size:24px;font-weight:600;margin:0}
+  .topbar h2{font-family:"Sora",sans-serif;font-size:24px;font-weight:600;margin:0}
   .gaugewrap{display:flex;align-items:center;gap:20px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin-bottom:22px}
   .gaugewrap p{margin:0;color:var(--ink-soft)}
-  .gaugewrap .num{font-family:"Fraunces",serif;font-size:15px;color:var(--seed);font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+  .gaugewrap .num{font-family:"Sora",sans-serif;font-size:15px;color:var(--seed);font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
   .sect{margin:26px 0 8px}
-  .sect h3{font-family:"Fraunces",serif;font-size:20px;font-weight:600;color:var(--seed);margin:0 0 4px;border-bottom:1px solid var(--line);padding-bottom:6px}
+  .sect h3{font-family:"Sora",sans-serif;font-size:20px;font-weight:600;color:var(--seed);margin:0 0 4px;border-bottom:1px solid var(--line);padding-bottom:6px}
   .item{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:10px 0}
   .item .t{font-weight:600;color:var(--ink);margin-bottom:3px}
   .item .d{color:var(--ink-soft)}
@@ -51,13 +51,13 @@
   .pill{font-size:11px;letter-spacing:.05em;text-transform:uppercase;font-weight:600;padding:3px 9px;border-radius:20px;border:1px solid}
   .roadmap{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
   .phase{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
-  .phase .ph{font-family:"Fraunces",serif;font-weight:600;color:var(--accent);margin-bottom:6px}
+  .phase .ph{font-family:"Sora",sans-serif;font-weight:600;color:var(--accent);margin-bottom:6px}
   .phase ul{margin:0;padding-left:18px;color:var(--ink-soft)}
   .phase li{margin:4px 0}
   .toollist a{color:var(--accent-deep);text-decoration:none;border-bottom:1px solid var(--line)}
   ul.plain{padding-left:18px;color:var(--ink-soft)}
   ul.plain li{margin:5px 0}
-  .first{background:#eef3ec;border:1px solid #cfe0d2;border-radius:10px;padding:14px 16px;color:var(--seed)}
+  .first{background:#0B1F14;border:1px solid #14532D;border-radius:10px;padding:14px 16px;color:var(--seed)}
   .disclaim{font-size:12.5px;color:var(--ink-soft);opacity:.85;margin-top:16px}
   @media(max-width:560px){.grid{grid-template-columns:1fr}.roadmap{grid-template-columns:1fr}h1{font-size:32px}}
 
@@ -66,19 +66,19 @@
   #handoff .hd{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2px solid var(--seed);padding-bottom:10px;margin-bottom:14px}
   #handoff .hd .bd{display:flex;align-items:center;gap:9px}
   #handoff .hd .dot{width:18px;height:18px;border-radius:50% 50% 50% 0;background:var(--seed);transform:rotate(-45deg)}
-  #handoff .hd .bd b{font-family:"Fraunces",serif;font-size:15px;color:var(--seed);letter-spacing:.12em;text-transform:uppercase}
-  #handoff h2{font-family:"Fraunces",serif;font-size:22px;margin:2px 0 0;color:var(--ink)}
+  #handoff .hd .bd b{font-family:"Sora",sans-serif;font-size:15px;color:var(--seed);letter-spacing:.12em;text-transform:uppercase}
+  #handoff h2{font-family:"Sora",sans-serif;font-size:22px;margin:2px 0 0;color:var(--ink)}
   #handoff .meta{text-align:right;font-size:12px;color:var(--ink-soft)}
   #handoff .score{display:flex;align-items:center;gap:14px;margin:10px 0 16px}
-  #handoff .score .big{font-family:"Fraunces",serif;font-size:38px;color:var(--seed);line-height:1}
+  #handoff .score .big{font-family:"Sora",sans-serif;font-size:38px;color:var(--seed);line-height:1}
   #handoff .score small{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);display:block}
-  #handoff h3{font-family:"Fraunces",serif;font-size:14px;color:var(--accent);text-transform:uppercase;letter-spacing:.06em;margin:14px 0 6px}
-  #handoff .start{background:#eef3ec;border-left:3px solid var(--seed);padding:9px 12px;font-size:13.5px;color:var(--seed)}
+  #handoff h3{font-family:"Sora",sans-serif;font-size:14px;color:var(--accent);text-transform:uppercase;letter-spacing:.06em;margin:14px 0 6px}
+  #handoff .start{background:#0B1F14;border-left:3px solid var(--seed);padding:9px 12px;font-size:13.5px;color:var(--seed)}
   #handoff .win{font-size:13px;margin:5px 0}
   #handoff .win b{color:var(--ink)}
   #handoff .rm{display:flex;gap:12px;font-size:12px}
   #handoff .rm div{flex:1}
-  #handoff .rm .p{font-family:"Fraunces",serif;color:var(--accent);margin-bottom:3px}
+  #handoff .rm .p{font-family:"Sora",sans-serif;color:var(--accent);margin-bottom:3px}
   #handoff .ft{margin-top:16px;padding-top:10px;border-top:1px solid var(--line);font-size:11px;color:var(--ink-soft);display:flex;justify-content:space-between}
   @media print{
     body *{visibility:hidden}
@@ -185,7 +185,7 @@ async function onContinue(){
 
 function renderQuestions(){
   app.innerHTML = `
-  <h2 style="font-family:Fraunces,serif;font-size:24px;font-weight:600;margin:0 0 4px">A few follow-ups</h2>
+  <h2 style="font-family:Sora,sans-serif;font-size:24px;font-weight:600;margin:0 0 4px">A few follow-ups</h2>
   <p class="lede" style="margin-bottom:20px">Answer what you can — anything you skip, Seed will reason around.</p>
   ${state.questions.map((q,i)=>`
     <label><span class="lab">Question ${i+1}</span>
@@ -236,7 +236,7 @@ function gauge(score){
     <circle cx="52" cy="52" r="${r}" fill="none" stroke="var(--line)" stroke-width="9"/>
     <circle cx="52" cy="52" r="${r}" fill="none" stroke="var(--seed)" stroke-width="9" stroke-linecap="round"
       stroke-dasharray="${c}" stroke-dashoffset="${off}" transform="rotate(-90 52 52)"/>
-    <text x="52" y="58" text-anchor="middle" font-family="Fraunces,serif" font-size="26" font-weight="600" fill="var(--ink)">${score}</text>
+    <text x="52" y="58" text-anchor="middle" font-family="Sora,sans-serif" font-size="26" font-weight="600" fill="var(--ink)">${score}</text>
   </svg>`;
 }
 
@@ -249,7 +249,7 @@ function renderReport(){
     <div style="display:flex;gap:8px">
       <button class="ghost" id="pdf">Client PDF</button>
       <button class="ghost" id="copy">Copy</button>
-      <button class="ghost" id="restart" style="background:var(--seed);color:#fbf9f2;border:none">New</button>
+      <button class="ghost" id="restart" style="background:var(--seed);color:#0F172A;border:none">New</button>
     </div>
   </div>
   <div class="gaugewrap">

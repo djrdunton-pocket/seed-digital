@@ -29,9 +29,6 @@ export const metadata: Metadata = {
     description: 'AI transformation consultancy for ambitious businesses across Bath, Bristol and Somerset. Start with a fixed-price AI audit.',
     creator: '@seeddigital',
   },
-  icons: {
-    icon: '/favicon.svg',
-  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
