@@ -60,7 +60,7 @@ export default function Audit() {
               {...externalLinkProps}
               className="mt-8 block w-full px-8 py-4 text-sm tracking-wide text-center bg-[#A3E635] text-[#0F172A] hover:bg-[#A3E635]/90 transition-colors rounded-xl"
             >
-              Book your audit
+              Book a discovery call
             </a>
           </div>
         </div>
